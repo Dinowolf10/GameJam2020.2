@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{8e05e2a3-48bc-4c85-a19d-15551fd9e937}">
+	<object class="AudioFile" id="{847fa8bc-4736-43a6-87ee-7ea45bac5644}">
 		<property name="assetPath">
-			<value>Puzzle/electricity veins - tape 4.wav</value>
+			<value>Puzzle/electric ambience 2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
