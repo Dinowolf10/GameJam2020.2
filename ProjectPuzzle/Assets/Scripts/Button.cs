@@ -6,6 +6,7 @@ public class Button : MonoBehaviour
 {
     private bool activated = false;
 
+    [SerializeField]
     private float counter;
 
     // Start is called before the first frame update
