@@ -30,6 +30,10 @@ public class PlayerShooting : MonoBehaviour
     /// </summary>
     private void Shoot()
     {
+        // Instantiates a bullet at the fire position
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        // Sound file for shooting
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Weapons/playerHandgun");
     }
 }

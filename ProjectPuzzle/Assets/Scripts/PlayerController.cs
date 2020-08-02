@@ -4,85 +4,69 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private CharacterController playerController;
+
     public float speed;
-
-    [SerializeField]
-    private Rigidbody2D rb;
-
-    [SerializeField]
-    private Vector2 movement;
 
     [SerializeField]
     private Camera cam;
 
-    private Vector3 mousePos3D;
-
-    private Vector2 mousePos2D;
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerController = this.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        CalculateMovement();
-
-        CalculateMousePos();
-    }
-
-    private void FixedUpdate()
     {
         Move();
 
         Look();
     }
 
-    /// <summary>
-    /// Calculates player movement based on user input
-    /// </summary>
-    public void CalculateMovement()
+    private void FixedUpdate()
     {
-        Vector2 playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        movement = playerInput.normalized * speed;
     }
 
     /// <summary>
-    /// Calculates the mouse position
-    /// </summary>
-    public void CalculateMousePos()
-    {
-        // Gets the mouse position and changez z to 10 due to camera being 10 units away
-        mousePos3D = Input.mousePosition;
-        mousePos3D.z = 10;
-
-        // Converts mouse position from pixels to world units
-        mousePos2D = cam.ScreenToWorldPoint(mousePos3D);
-    }
-
-    /// <summary>
-    /// Moves player
+    /// Moves player based on user input
     /// </summary>
     public void Move()
     {
-        rb.MovePosition(rb.position + movement * Time.fixedDeltaTime);
-    }
+        Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
+        playerController.Move(movement * speed * Time.deltaTime);
+
+        if (movement != Vector3.zero)
+        {
+            transform.forward = movement;
+        }
+    }
+    
     /// <summary>
-    /// Sets rotation of player based on mouse position
+    /// Sets rotation of the player using a raycast to determine the mouse position
     /// </summary>
     public void Look()
     {
-        // Stores the vector between player position and mouse position
-        Vector2 direction = (mousePos2D - rb.position);
+        // Shoots a ray out to the mouse position
+        Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
 
-        // Calculates the angle the player should be rotated
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+        // Creates a ground plane
+        Plane ground = new Plane(Vector3.up, Vector3.zero);
 
-        // Sets player rotation to the calculated angle
-        rb.rotation = angle;
+        // Used to store the ray length
+        float rayLength;
+
+        // Determines the length of the ray to the ground
+        if (ground.Raycast(camRay, out rayLength))
+        {
+            // Stores the point the player should look at
+            Vector3 lookPosition = camRay.GetPoint(rayLength);
+
+            // Player looks at the point, keep y position the same so the player doesnt look at the ground
+            transform.LookAt(new Vector3(lookPosition.x, this.transform.position.y, lookPosition.z));
+        }
     }
 }

@@ -214,6 +214,24 @@ MonoBehaviour:
   - Name: 
     Value: 688
   Exists: 1
+--- !u!114 &-1691524496891682762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: projectpuzzle_fmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637319764971996395
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1631529466166926695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,22 +285,68 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -9146672614061262040}
-  - {fileID: -8645323485972802580}
+  - {fileID: 8285270696958477664}
+  - {fileID: -1691524496891682762}
   EditorEvents:
-  - {fileID: 6379238111038945312}
-  - {fileID: -4924585090258056154}
-  - {fileID: -7477687768967555895}
-  - {fileID: 3807070811658696577}
-  - {fileID: 3190749885206706107}
-  - {fileID: 6723944575567705260}
+  - {fileID: 873856810884592791}
+  - {fileID: 6775918154512056759}
+  - {fileID: 7737313280495260481}
+  - {fileID: 921451197805303788}
+  - {fileID: 6215005655421825157}
+  - {fileID: 6727398446831818768}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8645323485972802580}
+  - {fileID: -1691524496891682762}
   StringsBanks:
-  - {fileID: -9146672614061262040}
-  stringsBankWriteTime: 637319975270000000
+  - {fileID: 8285270696958477664}
+  stringsBankWriteTime: 637319764972006366
   cacheVersion: 3
+--- !u!114 &873856810884592791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Puzzle mechanics/Door unlock
+  m_EditorClassIdentifier: 
+  Path: event:/Puzzle mechanics/Door unlock
+  guid: 2881075cdd754a4da76cdfe2cc9a112d
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &921451197805303788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Player/footsteps
+  guid: a0830fd93d325d47ac695001b729b6db
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 541
 --- !u!114 &1282794934539455077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +483,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6215005655421825157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/playerHandgun
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/playerHandgun
+  guid: d974d474494e544ea651a9c509768611
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1151
 --- !u!114 &6379238111038945312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +552,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 541
+--- !u!114 &6727398446831818768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Puzzle mechanics/Node on
+  m_EditorClassIdentifier: 
+  Path: event:/Puzzle mechanics/Node on
+  guid: f2961673ced91e45a8a42d360da93b7a
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1678
+--- !u!114 &6775918154512056759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/playerhurt
+  m_EditorClassIdentifier: 
+  Path: event:/Player/playerhurt
+  guid: 57c766ed40e4fe419255a5cd4d336428
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 593
 --- !u!114 &6883099186952306821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,3 +618,46 @@ MonoBehaviour:
   - Name: 
     Value: 688
   Exists: 0
+--- !u!114 &7737313280495260481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Puzzle mechanics/Node off
+  m_EditorClassIdentifier: 
+  Path: event:/Puzzle mechanics/Node off
+  guid: 7f6384f32aeeae428a7b94104b53ef57
+  Banks:
+  - {fileID: -1691524496891682762}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1624
+--- !u!114 &8285270696958477664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: projectpuzzle_fmod/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637319764972006366
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1024
+  Exists: 1

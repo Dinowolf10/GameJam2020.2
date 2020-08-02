@@ -8,9 +8,6 @@ public class Bullet : MonoBehaviour
 
     private bool fired = false;
 
-    [SerializeField]
-    private Transform firePoint;
-
     // Update is called once per frame
     void Update()
     {
@@ -18,8 +15,9 @@ public class Bullet : MonoBehaviour
         if (!fired)
         {
             // Adds a force to the bullet based on the bullet speed
-            this.transform.GetComponent<Rigidbody2D>().AddForce(this.transform.up * bulletSpeed, ForceMode2D.Impulse);
+            this.transform.GetComponent<Rigidbody>().AddForce(this.transform.forward * bulletSpeed, ForceMode.Impulse);
 
+            // Sets fired to true
             fired = true;
         }
         
