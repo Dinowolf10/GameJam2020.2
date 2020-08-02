@@ -10,6 +10,9 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     private GameObject bulletPrefab;
 
+    [SerializeField]
+    private float coolDownTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +22,15 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && coolDownTimer <= 0)
         {
             Shoot();
+
+            coolDownTimer = .35f;
+        }
+        else if (coolDownTimer > 0)
+        {
+            coolDownTimer -= Time.deltaTime;
         }
     }
 

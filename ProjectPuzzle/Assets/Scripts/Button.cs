@@ -45,7 +45,7 @@ public class Button : MonoBehaviour
 
                 activated = true;
 
-                counter = 5f;
+                counter = 4f;
             }
         }
     }
