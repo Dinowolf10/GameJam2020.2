@@ -157,6 +157,7 @@ MonoBehaviour:
   speed: 5
   rb: {fileID: 1388684607}
   movement: {x: 0, y: 0}
+  cam: {fileID: 1866981096}
 --- !u!50 &1388684607
 Rigidbody2D:
   serializedVersion: 4
@@ -165,7 +166,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388684605}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -177,7 +178,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1388684608
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -218,12 +219,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6316833cb492f474abe32e5369f09e99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb097f5ba4d0973498b0499415868b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.6, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
