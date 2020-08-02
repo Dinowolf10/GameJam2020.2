@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{8e05e2a3-48bc-4c85-a19d-15551fd9e937}">
 		<property name="assetPath">
-			<value>electricity veins - tape 4.wav</value>
+			<value>Puzzle/electricity veins - tape 4.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
