@@ -76,10 +76,13 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void Look()
     {
+        // Stores the vector between player position and mouse position
         Vector2 direction = (mousePos2D - rb.position);
 
+        // Calculates the angle the player should be rotated
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
 
+        // Sets player rotation to the calculated angle
         rb.rotation = angle;
     }
 }
