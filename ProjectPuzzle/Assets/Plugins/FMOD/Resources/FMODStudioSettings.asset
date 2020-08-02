@@ -13,15 +13,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
-<<<<<<< HEAD
+  HasSourceProject: 1
+  HasPlatforms: 1
   sourceProjectPath: 
   sourceBankPath: 
-=======
-  sourceProjectPath: projectpuzzle_fmod/projectpuzzle.fspro
-  sourceBankPath: projectpuzzle_fmod/Build/Desktop
->>>>>>> 8d32881a4852a748c8f3adf1aee90252bceee632
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -63,9 +58,7 @@ MonoBehaviour:
     Value: 0
   - Platform: 20
     Value: 0
-  BankDirectorySettings:
-  - Platform: 2
-    Value: Desktop
+  BankDirectorySettings: []
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -81,8 +74,7 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master
+  MasterBanks: []
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
