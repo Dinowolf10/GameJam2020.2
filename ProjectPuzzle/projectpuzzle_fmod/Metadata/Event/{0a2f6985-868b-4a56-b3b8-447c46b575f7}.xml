@@ -107,6 +107,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{05dc33ee-578b-42d2-9bb5-98bae3ec1e24}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -123,6 +126,9 @@
 	<object class="SoundScatterer" id="{f939bbff-72d0-4e6c-afd6-1743663aed25}">
 		<property name="length">
 			<value>6.8749886621315195</value>
+		</property>
+		<property name="spawnRate">
+			<value>64</value>
 		</property>
 		<relationship name="sound">
 			<destination>{1ca6062e-1f4c-400c-a913-4c14ccf87aa9}</destination>
