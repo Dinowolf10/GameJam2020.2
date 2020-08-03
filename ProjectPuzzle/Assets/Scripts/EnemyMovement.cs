@@ -7,29 +7,27 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        CalculateRotation();
+        Look();
     }
 
     /// <summary>
-    /// Calculates the angle for the enemy to look at, then sets its rotation to this angle
+    /// Enemy looks at player
     /// </summary>
-    private void CalculateRotation()
+    private void Look()
     {
+        // Finds player gameobject and stores the transform
         Transform playerPos = GameObject.Find("Player").GetComponent<Transform>();
 
+        // If player is still alive, the enemy looks at the players position
         if (playerPos != null)
         {
-            Vector2 direction = playerPos.position - this.transform.position;
-
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-
-            this.GetComponent<Rigidbody2D>().rotation = angle;
+            this.transform.LookAt(playerPos);
         }
     }
 }

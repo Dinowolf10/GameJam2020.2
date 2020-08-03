@@ -15,6 +15,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerController = this.GetComponent<CharacterController>();
+
+        if (cam == null)
+        {
+            cam = Camera.main;
+        }
     }
 
     // Update is called once per frame
@@ -35,14 +40,15 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void Move()
     {
+        // Gets user inpt from the horizontal and vertical axis
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         playerController.Move(movement * speed * Time.deltaTime);
 
-        if (movement != Vector3.zero)
+        /*if (movement != Vector3.zero)
         {
             transform.forward = movement;
-        }
+        }*/
     }
     
     /// <summary>
