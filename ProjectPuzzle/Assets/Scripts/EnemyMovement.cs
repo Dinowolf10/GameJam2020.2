@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +15,12 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Look();
+        if (transform.Find("EnemyVision").GetComponent<EnemyVision>().lookingAtPlayer == true)
+        {
+            Look();
+
+            //MoveTowardsPlayer(GameObject.Find("Player").transform);
+        }
     }
 
     /// <summary>
@@ -28,6 +35,17 @@ public class EnemyMovement : MonoBehaviour
         if (playerPos != null)
         {
             this.transform.LookAt(playerPos);
+        }
+    }
+
+    /// <summary>
+    /// Enemy moves towards player
+    /// </summary>
+    public void MoveTowardsPlayer(Transform playerPos)
+    {
+        if (playerPos != null)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos.position, speed * Time.deltaTime);
         }
     }
 }

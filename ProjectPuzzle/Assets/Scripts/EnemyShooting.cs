@@ -22,20 +22,23 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shootTimer > 0)
+        if (transform.Find("EnemyVision").GetComponent<EnemyVision>().lookingAtPlayer == true)
         {
-            shootTimer -= Time.deltaTime;
-        }
-        else if (shootTimer <= 0)
-        {
-            if (firePoint == null)
+            if (shootTimer > 0)
             {
-                transform.Find("FirePoint");
+                shootTimer -= Time.deltaTime;
             }
+            else if (shootTimer <= 0)
+            {
+                if (firePoint == null)
+                {
+                    transform.Find("FirePoint");
+                }
 
-            Shoot();
+                Shoot();
 
-            shootTimer = 2f;
+                shootTimer = 2f;
+            }
         }
     }
 
