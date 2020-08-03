@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/Node off
   guid: 7f6384f32aeeae428a7b94104b53ef57
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/Weapons/playerHandgun
   guid: d974d474494e544ea651a9c509768611
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/Ambience/cave ambience
   guid: 7753c4256bcb924f9099d2fbaef9ec7b
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   lastModified: 637320172730000000
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4195555104254462919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   Path: event:/Player/playerhurt
   guid: 57c766ed40e4fe419255a5cd4d336428
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -179,7 +179,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/electric ambience
   guid: 6ff9fbbb848952479bdfb1687ae73d38
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 4450115826319770729}
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   EditorEvents:
   - {fileID: 7035587074780026241}
   - {fileID: -4195555104254462919}
@@ -213,12 +213,13 @@ MonoBehaviour:
   - {fileID: -340872495119116938}
   - {fileID: 2481859940187781725}
   - {fileID: 2596009129756246559}
+  - {fileID: 4802755962341390960}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   StringsBanks:
   - {fileID: 4450115826319770729}
-  stringsBankWriteTime: 637320172730000000
+  stringsBankWriteTime: 637320626800000000
   cacheVersion: 3
 --- !u!114 &2481859940187781725
 MonoBehaviour:
@@ -235,7 +236,7 @@ MonoBehaviour:
   Path: event:/Weapons/Ricochet
   guid: 9d3986791d4b284f91698bf1013b1c5c
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -258,7 +259,7 @@ MonoBehaviour:
   Path: event:/Player/footsteps
   guid: a0830fd93d325d47ac695001b729b6db
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -281,7 +282,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/pushingOrPulling
   guid: ac885fc24c6f904ab3d8a83cd690aae9
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -289,6 +290,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6667
+--- !u!114 &4057324897760496508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: projectpuzzle_fmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637320626800000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4450115826319770729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,12 +322,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: projectpuzzle_fmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637320172730000000
+  lastModified: 637320626800000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1222
+    Value: 1262
   Exists: 1
+--- !u!114 &4802755962341390960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/enemyFire
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/enemyFire
+  guid: f54f033886b7de4a8a7dfe5136fc2ce1
+  Banks:
+  - {fileID: 4057324897760496508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1376
 --- !u!114 &5639542918460703236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +384,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/Door unlock
   guid: 2881075cdd754a4da76cdfe2cc9a112d
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -365,7 +407,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/Node on
   guid: f2961673ced91e45a8a42d360da93b7a
   Banks:
-  - {fileID: -4243694308110287486}
+  - {fileID: 4057324897760496508}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

@@ -47,6 +47,7 @@ public class EnemyShooting : MonoBehaviour
     /// </summary>
     public void Shoot()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Weapons/enemyFire");
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }
