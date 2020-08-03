@@ -100,9 +100,9 @@
 			<destination>{9db1b1cf-57fd-4788-b7ed-f6f80dcdea4f}</destination>
 		</relationship>
 		<relationship name="sounds">
-			<destination>{a01a1bd8-3eea-402b-83ad-a45510b237e2}</destination>
-			<destination>{f1d14f82-19a4-477d-9589-18c89067eaaf}</destination>
 			<destination>{ce67bece-fc60-4f6e-971b-5521af09277a}</destination>
+			<destination>{07c861f0-159f-4797-8e14-631f6c3da544}</destination>
+			<destination>{b2839b1f-42c0-40fc-bf8a-0943a8377ed7}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0a4d2e75-4c24-49c3-9f72-da4b9a1fb3f7}">
@@ -142,25 +142,28 @@
 			<value>4</value>
 		</property>
 	</object>
-	<object class="SingleSound" id="{a01a1bd8-3eea-402b-83ad-a45510b237e2}">
-		<relationship name="audioFile">
-			<destination>{4a0f2730-2c9f-41db-96b2-ff55f09067d1}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{f1d14f82-19a4-477d-9589-18c89067eaaf}">
-		<property name="volume">
-			<value>-5.5</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{a23980f6-e942-45d8-a934-7b5d94afa299}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{ce67bece-fc60-4f6e-971b-5521af09277a}">
 		<property name="volume">
 			<value>-1</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{c80fe87b-b4be-43a5-a20c-d84521f76229}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{07c861f0-159f-4797-8e14-631f6c3da544}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{1736cca5-b572-4219-beb4-cf23e111acc2}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{b2839b1f-42c0-40fc-bf8a-0943a8377ed7}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{f17745d1-c64a-4a48-9060-950ecf7a088a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{5126f6f3-ebd6-4544-a8a4-99d0b5ed34ee}">
