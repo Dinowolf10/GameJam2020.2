@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{5d46cb6e-ce3b-4a55-83c5-1f85bbd897e3}">
 		<property name="name">
-			<value>New Event</value>
+			<value>menu ambience</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{71c01c7e-2522-4120-9a6c-bbf58db35cc2}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{4c69a230-e843-4912-9f77-65f4c1530563}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{c3bae447-7f04-492e-a286-8ba3594ad0c4}">
