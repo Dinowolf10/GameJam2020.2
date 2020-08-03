@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DataFile" id="{fe019452-4298-48ad-9a39-f594a3c2d57c}">
+		<property name="assetPath">
+			<value>Weapon/sniper/enemySniper.logicx/Alternatives/000/ProjectData</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b2cdb2-d943-4c53-8c7f-06ab373f4cee}</destination>
+		</relationship>
+	</object>
+</objects>

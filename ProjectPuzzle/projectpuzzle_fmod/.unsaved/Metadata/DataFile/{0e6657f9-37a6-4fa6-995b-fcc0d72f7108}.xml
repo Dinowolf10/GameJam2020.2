@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="DataFile" id="{0e6657f9-37a6-4fa6-995b-fcc0d72f7108}">
+		<property name="assetPath">
+			<value>Weapon/sniper/enemySniper.logicx/Alternatives/000/Autosave/2020-08-03 12:32:14 +0000.displayData</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b2cdb2-d943-4c53-8c7f-06ab373f4cee}</destination>
+		</relationship>
+	</object>
+</objects>
