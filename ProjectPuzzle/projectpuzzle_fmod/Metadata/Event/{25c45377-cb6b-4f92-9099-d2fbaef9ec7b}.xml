@@ -5,7 +5,7 @@
 			<value>cave ambience</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{998602f9-e9b7-4898-8320-aa716640710d}</destination>
@@ -185,6 +185,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{1a9be38c-53d5-4cbf-8708-66e283498cc0}">
 		<relationship name="effects">
+			<destination>{601079fb-35ae-4f04-858c-e6d2becc9d81}</destination>
+			<destination>{f868ccc0-7c24-421d-8fc9-29c64b926db9}</destination>
 			<destination>{38d6f147-7aeb-4910-913b-4cb1e380b7c6}</destination>
 		</relationship>
 	</object>
@@ -223,6 +225,19 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7e1fa69e-2134-4de4-9615-ee4cc4b3c50d}" />
+	<object class="SpatialiserEffect" id="{601079fb-35ae-4f04-858c-e6d2becc9d81}">
+		<property name="minimumDistance">
+			<value>6.4000001</value>
+		</property>
+		<property name="maximumDistance">
+			<value>99</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{f868ccc0-7c24-421d-8fc9-29c64b926db9}">
+		<property name="decayTime">
+			<value>2600</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{38d6f147-7aeb-4910-913b-4cb1e380b7c6}" />
 	<object class="SingleSound" id="{93705919-fd16-4af6-9088-32f66d6e1b20}">
 		<relationship name="audioFile">
