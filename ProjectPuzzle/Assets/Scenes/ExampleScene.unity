@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footAudio: event:/Player/footsteps
-  walkingspeed: 0.28
+  walkingspeed: 0.4
 --- !u!1 &1866981094
 GameObject:
   m_ObjectHideFlags: 0
