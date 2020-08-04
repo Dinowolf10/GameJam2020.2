@@ -25,6 +25,7 @@ public class PowerEnabler : MonoBehaviour
             {
                 if (hit.transform.gameObject.GetComponent<PowerLine>() != null && hit.transform.gameObject.GetComponent<PowerLine>().SequenceNumber == 1)
                 {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/Node on");
                     hit.transform.gameObject.GetComponent<PowerLine>().StartCheck();
                     hit.transform.gameObject.GetComponent<PowerLine>().charged = true;
                 }
