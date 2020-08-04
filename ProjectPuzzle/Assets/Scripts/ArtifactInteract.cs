@@ -30,6 +30,9 @@ public class ArtifactInteract : MonoBehaviour
             {
                 Destroy(gameObject);
                 pickupText.SetActive(false);
+
+                // Sound file
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/artifact");
             }
         }
     }
@@ -51,5 +54,3 @@ public class ArtifactInteract : MonoBehaviour
     }
 
 }
-/* Insert this line where the pickup happens, can't find it
- * FMODUnity.RuntimeManager.PlayOneShot("event:/UI/artifact");  */
