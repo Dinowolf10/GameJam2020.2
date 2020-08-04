@@ -9,16 +9,14 @@ public class ObjectPush : MonoBehaviour
     private Vector3 speed;
     public float time;
 
-    float holdercal;
-    private List<float> side = new List<float>();
-    private List<float> distside = new List<float>();
-
+    public bool ismoving;
     public float test;
+    CharacterController ccr;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ccr = FindObjectOfType<CharacterController>();
     }
 
     // Update is called once per frame
@@ -27,10 +25,12 @@ public class ObjectPush : MonoBehaviour
         if(newpos != Vector3.zero)
         {
             transform.position = Vector3.SmoothDamp(transform.position, newpos, ref speed, time);
+            ccr.enabled = false;
         }
         if(newpos == transform.position)
         {
             newpos = Vector3.zero;
+            ccr.enabled = true;
             Debug.Log("done");
         }
         if (newpos == Vector3.zero)

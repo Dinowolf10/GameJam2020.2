@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{cc924104-d618-46f6-adec-a2e9da666ad4}">
 		<property name="assetPath">
-			<value>pushPullAttack.wav</value>
+			<value>Puzzle/pushPullAttack.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

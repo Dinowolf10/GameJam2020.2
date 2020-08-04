@@ -42,5 +42,24 @@ public class ObjectDir : MonoBehaviour
                 objp.newpos = objp.transform.position + (objp.transform.right * objp.transform.localScale.x);
             }
         }
+        if(other.tag == "Bullet" && objp.newpos == Vector3.zero)
+        {
+            if(north == true)
+            {
+                objp.newpos = objp.transform.position + (objp.transform.forward * objp.transform.localScale.x);
+            }
+            if (south == true)
+            {
+                objp.newpos = objp.transform.position - (objp.transform.forward * objp.transform.localScale.x);
+            }
+            if (east == true)
+            {
+                objp.newpos = objp.transform.position + (objp.transform.right * objp.transform.localScale.x);
+            }
+            if (west == true)
+            {
+                objp.newpos = objp.transform.position - (objp.transform.right * objp.transform.localScale.x);
+            }
+        }
     }
 }
