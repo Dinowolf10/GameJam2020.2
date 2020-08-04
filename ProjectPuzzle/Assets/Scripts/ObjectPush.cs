@@ -30,7 +30,7 @@ public class ObjectPush : MonoBehaviour
             if (soundPlayed == 0)
             {
                 // Sound file
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/boulderBreak");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/grunt");
 
                 soundPlayed++;
             }
