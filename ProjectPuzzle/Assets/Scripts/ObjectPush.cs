@@ -26,12 +26,14 @@ public class ObjectPush : MonoBehaviour
         {
             transform.position = Vector3.SmoothDamp(transform.position, newpos, ref speed, time);
             ccr.enabled = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/grunt");
         }
         if(newpos == transform.position)
         {
             newpos = Vector3.zero;
             ccr.enabled = true;
             Debug.Log("done");
+            
         }
         if (newpos == Vector3.zero)
         {
@@ -40,6 +42,7 @@ public class ObjectPush : MonoBehaviour
             {
                 if (hit.transform.tag == "Player")
                 {
+                    
                     Debug.Log("Loksgd");
                     newpos = transform.position - (transform.forward * transform.localScale.x);
                 }
