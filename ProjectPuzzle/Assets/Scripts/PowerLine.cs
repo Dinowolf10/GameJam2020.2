@@ -56,6 +56,7 @@ public class PowerLine : MonoBehaviour
                 }
             }
         }
+
         else if(!IsEnd)
         {
             PowerLine[] pl;
@@ -63,6 +64,14 @@ public class PowerLine : MonoBehaviour
             for (int i = 0; i < pl.Length; i++)
             {
                 pl[i].charged = false;
+            }
+        }
+
+        else if (Physics.Raycast(transform.position, transform.forward, out hit, 1f) && IsEnd)
+        {
+            if (hit.transform.gameObject.GetComponent<PowerEnd>() != null)
+            {
+                hit.transform.gameObject.GetComponent<PowerEnd>().ChargeToLine();
             }
         }
     }
