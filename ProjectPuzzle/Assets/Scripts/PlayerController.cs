@@ -50,6 +50,9 @@ public class PlayerController : MonoBehaviour
 
         playerController.Move(movement * speed * Time.deltaTime);
 
+        // Keeps player on the ground
+        transform.position = new Vector3(transform.position.x, 1.08f, transform.position.z);
+
         /*if (movement != Vector3.zero)
         {
             transform.forward = movement;

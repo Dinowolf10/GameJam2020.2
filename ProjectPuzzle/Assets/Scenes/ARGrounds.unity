@@ -2327,6 +2327,14 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 936797109}
+    - target: {fileID: 2456792505298026290, guid: 6c1d11cb17aa713489869ec94be0f95b, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456792505298026290, guid: 6c1d11cb17aa713489869ec94be0f95b, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2456792505298026291, guid: 6c1d11cb17aa713489869ec94be0f95b, type: 3}
       propertyPath: m_Enabled
       value: 0

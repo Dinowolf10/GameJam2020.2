@@ -52,7 +52,11 @@ public class EnemyShooting : MonoBehaviour
     /// </summary>
     public void Shoot()
     {
+        // Instantiates a bullet and sets firedBy variable to enemy
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        bullet.GetComponent<Bullet>().firedBy = "Enemy";
+
+        // Sound file
         FMODUnity.RuntimeManager.PlayOneShot("event:/Weapons/enemyFire");
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

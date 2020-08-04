@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private float lifeSpan = 2f;
 
+    public string firedBy;
+
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +46,11 @@ public class Bullet : MonoBehaviour
         else if (other.gameObject.name == "Player")
         {
 
+        }
+        else if (other.tag == "Destructible")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
         else
         {

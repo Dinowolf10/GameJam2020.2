@@ -13,6 +13,8 @@ public class ObjectPush : MonoBehaviour
     public float test;
     CharacterController ccr;
 
+    int soundPlayed = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +26,23 @@ public class ObjectPush : MonoBehaviour
     {
         if(newpos != Vector3.zero)
         {
+            // Plays sound if it hasnt been played yet
+            if (soundPlayed == 0)
+            {
+                // Sound file
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/boulderBreak");
+
+                soundPlayed++;
+            }
+
             transform.position = Vector3.SmoothDamp(transform.position, newpos, ref speed, time);
             ccr.enabled = false;
         }
         if(newpos == transform.position)
         {
+            // Resets number of times sound was played 
+            soundPlayed = 0;
+
             newpos = Vector3.zero;
             ccr.enabled = true;
             Debug.Log("done");
