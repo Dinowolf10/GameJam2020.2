@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
         Move();
 
         Look();
+
+        if (cam.gameObject.activeInHierarchy == false)
+        {
+            cam = FindObjectOfType<Camera>();
+        }
     }
 
     private void FixedUpdate()
