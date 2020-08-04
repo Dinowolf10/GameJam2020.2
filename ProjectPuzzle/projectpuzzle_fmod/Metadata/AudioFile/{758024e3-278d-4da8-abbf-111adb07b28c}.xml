@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{758024e3-278d-4da8-abbf-111adb07b28c}">
+		<property name="assetPath">
+			<value>Weapon/sniper/enemySniper.logicx/Media/Audio Files/Gun, Sniper Rifle, Dragunov SVD, Various Shots, Reload 1 SND35490 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1276870748299319</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b2cdb2-d943-4c53-8c7f-06ab373f4cee}</destination>
+		</relationship>
+	</object>
+</objects>
