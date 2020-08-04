@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour
 
     private bool fired = false;
 
+    [SerializeField]
+    private float lifeSpan = 2f;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +23,27 @@ public class Bullet : MonoBehaviour
             // Sets fired to true
             fired = true;
         }
+
+        if (lifeSpan > 0)
+        {
+            lifeSpan -= Time.deltaTime;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "EnemyVision")
+        {
+
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

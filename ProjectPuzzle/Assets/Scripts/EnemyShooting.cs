@@ -22,23 +22,28 @@ public class EnemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.Find("EnemyVision").GetComponent<EnemyVision>().lookingAtPlayer == true)
+        
+    }
+
+    /// <summary>
+    /// Keeps track of the cooldown between each enemy shot
+    /// </summary>
+    public void ShotCooldown()
+    {
+        if (shootTimer > 0)
         {
-            if (shootTimer > 0)
+            shootTimer -= Time.deltaTime;
+        }
+        else if (shootTimer <= 0)
+        {
+            if (firePoint == null)
             {
-                shootTimer -= Time.deltaTime;
+                transform.Find("FirePoint");
             }
-            else if (shootTimer <= 0)
-            {
-                if (firePoint == null)
-                {
-                    transform.Find("FirePoint");
-                }
 
-                Shoot();
+            Shoot();
 
-                shootTimer = 2f;
-            }
+            shootTimer = 2f;
         }
     }
 
@@ -47,6 +52,7 @@ public class EnemyShooting : MonoBehaviour
     /// </summary>
     public void Shoot()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Weapons/enemyFire");
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

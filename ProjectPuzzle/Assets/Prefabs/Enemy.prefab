@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6515932677203942800}
   - component: {fileID: 3903833487055740209}
   - component: {fileID: -3778528649301670205}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5343071408393738906}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9f6652623c9c74c938c5991ad3c2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookingAtPlayer: 0
 --- !u!1001 &7550382269546012232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,6 +271,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f0a4341406a595c459ced086e4d54ea2, type: 3}
       propertyPath: m_Name
       value: EnemyVision
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f0a4341406a595c459ced086e4d54ea2, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a4341406a595c459ced086e4d54ea2, type: 3}
