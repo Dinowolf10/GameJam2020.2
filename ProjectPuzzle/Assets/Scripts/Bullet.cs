@@ -41,6 +41,10 @@ public class Bullet : MonoBehaviour
         {
 
         }
+        else if (other.gameObject.name == "Player")
+        {
+
+        }
         else
         {
             Destroy(this.gameObject);

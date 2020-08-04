@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menus/OptionsScene.unity
     guid: 80ae86a60512dc544a6b726ec653f10c
   - enabled: 1
-    path: Assets/Scenes/ExampleScene.unity
-    guid: a291c6ed34bda58428b094bb6cb5ba92
+    path: Assets/Scenes/ARGrounds.unity
+    guid: 5172d8a5348006e408c64d8f14e01518
+  - enabled: 1
+    path: Assets/Scenes/RelicTest.unity
+    guid: 0d91243ea3f16114693d91f82997fb68
   m_configObjects: {}
