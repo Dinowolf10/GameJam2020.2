@@ -10,7 +10,13 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
-#Ignore Mac System Files
+# Fmod stuff
+/Assets/FMODStudioCache.asset
+/Assets/FMODStudioCache.asset.meta
+fmod.log
+fmod_editor.log
+
+# Ignore Mac System Files
 .DS_Store
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
