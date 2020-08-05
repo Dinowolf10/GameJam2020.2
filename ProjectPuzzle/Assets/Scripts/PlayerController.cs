@@ -6,7 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController playerController;
 
+    public int health = 3;
+
     public float speed;
+
+    [SerializeField]
+    private Vector3 spawnPoint;
 
     [SerializeField]
     private Camera cam;
@@ -32,6 +37,11 @@ public class PlayerController : MonoBehaviour
         if (cam.gameObject.activeInHierarchy == false)
         {
             cam = FindObjectOfType<Camera>();
+        }
+
+        if (health <= 0)
+        {
+            transform.position = spawnPoint;
         }
     }
 

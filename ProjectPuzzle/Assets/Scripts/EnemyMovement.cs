@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public int health = 2;
+
     public float speed;
 
     [SerializeField]
     private Vector3 spawnPoint;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         spawnPoint = transform.position;
     }
@@ -23,6 +24,8 @@ public class EnemyMovement : MonoBehaviour
         CheckForReturn();
 
         CheckForRotation();
+
+        
     }
 
     /// <summary>
