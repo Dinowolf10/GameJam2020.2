@@ -43,6 +43,15 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = spawnPoint;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(GameController.instance.pauseMenuOpen == false)
+            {
+                GameController.instance.pauseMenuOpen = true;
+                SceneController.instance.AddScene(GameController.instance.pauseMenuName);
+            }
+        }
     }
 
     private void FixedUpdate()

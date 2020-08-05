@@ -777,7 +777,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2047493481}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: AddScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
