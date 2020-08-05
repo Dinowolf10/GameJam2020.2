@@ -1,0 +1,3 @@
+New room
+	Z = 15
+	x = 
