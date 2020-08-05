@@ -14,7 +14,7 @@
 /Assets/FMODStudioCache.asset
 /Assets/FMODStudioCache.asset.meta
 fmod.log
-fmod_editor.log
+/fmod_editor.log
 
 # Ignore Mac System Files
 .DS_Store
