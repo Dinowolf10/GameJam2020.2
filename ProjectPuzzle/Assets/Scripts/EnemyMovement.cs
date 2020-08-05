@@ -6,16 +6,23 @@ public class EnemyMovement : MonoBehaviour
 {
     public float speed;
 
+    [SerializeField]
+    private Vector3 spawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        spawnPoint = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         DetectPlayer();
+
+        CheckForReturn();
+
+        CheckForRotation();
     }
 
     /// <summary>
@@ -60,7 +67,7 @@ public class EnemyMovement : MonoBehaviour
 
             RaycastHit hit;
 
-            if (Physics.Raycast(this.transform.position, directionToPlayer, out hit, maxVisionRange.z * 2))
+            if (Physics.Raycast(this.transform.position, directionToPlayer, out hit, maxVisionRange.z))
             {
                 if (hit.collider != null)
                 {
@@ -75,9 +82,33 @@ public class EnemyMovement : MonoBehaviour
                     else
                     {
                         transform.Find("EnemyVision").GetComponent<EnemyVision>().seesPlayer = false;
+
+                        this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
                     }
                 }
             }
+        }
+    }
+
+    /// <summary>
+    /// Checks if enemy should move back to spawn point
+    /// </summary>
+    public void CheckForReturn()
+    {
+        if (this.transform.position != spawnPoint && transform.Find("EnemyVision").GetComponent<EnemyVision>().playerInCollider == false)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
+        }
+    }
+
+    /// <summary>
+    /// Checks if enemy is at spawn point and if their rotation needs to be reset
+    /// </summary>
+    public void CheckForRotation()
+    {
+        if (this.transform.position == spawnPoint)
+        {
+            this.transform.rotation = new Quaternion(this.transform.rotation.x, 180f, this.transform.rotation.z, this.transform.rotation.w);
         }
     }
 }
