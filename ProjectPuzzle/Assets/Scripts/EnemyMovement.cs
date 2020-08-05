@@ -19,13 +19,19 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DetectPlayer();
+        if (health > 0)
+        {
+            DetectPlayer();
 
-        CheckForReturn();
+            CheckForReturn();
 
-        CheckForRotation();
+            //CheckForRotation();
+        }
 
-        
+        if (health <= 0)
+        {
+            StartCoroutine("Resurrect");
+        }
     }
 
     /// <summary>
@@ -76,7 +82,7 @@ public class EnemyMovement : MonoBehaviour
                 {
                     Debug.DrawLine(this.transform.position, hit.point, Color.green);
 
-                    Debug.Log(hit.transform.gameObject.name);
+                    //Debug.Log(hit.transform.gameObject.name);
 
                     if (hit.collider.gameObject.name == "Player")
                     {
@@ -107,11 +113,29 @@ public class EnemyMovement : MonoBehaviour
     /// <summary>
     /// Checks if enemy is at spawn point and if their rotation needs to be reset
     /// </summary>
-    public void CheckForRotation()
+    /*public void CheckForRotation()
     {
         if (this.transform.position == spawnPoint)
         {
             this.transform.rotation = new Quaternion(this.transform.rotation.x, 180f, this.transform.rotation.z, this.transform.rotation.w);
         }
+    }*/
+
+    public IEnumerator Resurrect()
+    {
+        while (this.transform.position != spawnPoint)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .001f);
+
+            //Debug.Log("Moving");
+
+            yield return new WaitForSeconds(.5f);
+        }
+
+        this.transform.rotation = new Quaternion(this.transform.rotation.x, 180f, this.transform.rotation.z, this.transform.rotation.w);
+
+        health = 2;
+
+        yield break;
     }
 }

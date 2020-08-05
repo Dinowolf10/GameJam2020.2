@@ -11,7 +11,7 @@ public class EnemyVision : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         // If the enemy vision collides with the player and the enemy "sees" the player
-        if (other.gameObject.name == "Player" && seesPlayer == true)
+        if (other.gameObject.name == "Player" && seesPlayer == true && transform.parent.GetComponent<EnemyMovement>().health > 0)
         {
             // Enemy looks at the player
             this.transform.parent.GetComponent<EnemyMovement>().Look();

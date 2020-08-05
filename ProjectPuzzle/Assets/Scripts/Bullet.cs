@@ -46,14 +46,19 @@ public class Bullet : MonoBehaviour
         else if(other.tag == "Enemy" && firedBy == "Player")
         {
             other.GetComponent<EnemyMovement>().health--;
+
+            Destroy(this.gameObject);
         }
         else if (other.gameObject.name == "Player" && firedBy == "Enemy")
         {
             other.GetComponent<PlayerController>().health--;
+
+            Destroy(this.gameObject);
         }
         else if (other.tag == "Destructible")
         {
             Destroy(other.gameObject);
+
             Destroy(this.gameObject);
         }
         else
