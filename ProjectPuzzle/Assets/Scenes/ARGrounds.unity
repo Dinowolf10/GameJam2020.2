@@ -2570,6 +2570,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 319208666}
+    - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 6880384501144409870, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2590,6 +2594,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 681781023}
+    - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8378912413624012720, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2876,6 +2884,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 1992478112}
+    - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 6880384501144409870, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2884,6 +2896,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 304494929}
+    - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8378912413624012720, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6557,10 +6573,18 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 304494929}
+    - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 304494929}
+    - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8378912413624012720, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16079,6 +16103,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 5536881311878690412, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -16091,6 +16119,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 1992478112}
+    - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8378912413624012720, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -19135,6 +19167,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 2019937584}
+    - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 6880384501144409870, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19143,6 +19179,10 @@ PrefabInstance:
       propertyPath: Cam2
       value: 
       objectReference: {fileID: 319208666}
+    - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: UIFade
+      value: 
+      objectReference: {fileID: 2017335312}
     - target: {fileID: 8378912413624012720, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
