@@ -20,11 +20,13 @@ public class SceneController : MonoBehaviour
     public void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
     }
 
     public void AddScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
     }
 
     public void CloseScene(string sceneName)
@@ -34,11 +36,13 @@ public class SceneController : MonoBehaviour
             GameController.instance.PauseMenuClosed();
         }
         SceneManager.UnloadSceneAsync(sceneName);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
     }
 
     public void ExitGame()
     {
         Application.Quit();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
     }
 
 }

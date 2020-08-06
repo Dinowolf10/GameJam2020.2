@@ -7,7 +7,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7ff35c0eea08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7ff360747208 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,13 +15,130 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='boulderBreak1', format=2, channels=2, frequency=48000, lengthbytes=31328, lengthpcm=120000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ricochet1', format=2, channels=2, frequency=48000, lengthbytes=17280, lengthpcm=49914, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Ricochet2', format=2, channels=2, frequency=48000, lengthbytes=10912, lengthpcm=40881, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='boulderBreak5', format=2, channels=2, frequency=48000, lengthbytes=22304, lengthpcm=89345, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='boulderBreak3', format=2, channels=2, frequency=48000, lengthbytes=22016, lengthpcm=77143, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='boulderBreak2', format=2, channels=2, frequency=48000, lengthbytes=31168, lengthpcm=112961, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4225088
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48960
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x700004da98ac
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x14ec049e4
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x14ec04a9b
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x14ec04ac8
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x14ec04b6a
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7ff363136ba8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='boulderBreak4', format=2, channels=2, frequency=48000, lengthbytes=18144, lengthpcm=68878, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] SoundI::release                          :  (0x7ff3633e69a8)
+[LOG] SoundI::release                          :     Ricochet1 (0x7ff3633efa28)
+[LOG] SoundI::release                          :  (0x7ff362ee89b8)
+[LOG] SoundI::release                          :     Ricochet2 (0x7ff3633e4208)
+[LOG] SoundI::release                          :  (0x7ff363044aa8)
+[LOG] SoundI::release                          :     boulderBreak1 (0x7ff3630a14b8)
+[LOG] SoundI::release                          :  (0x7ff362eb4c38)
+[LOG] SoundI::release                          :     boulderBreak2 (0x7ff363382578)
+[LOG] SoundI::release                          :  (0x7ff3635d77a8)
+[LOG] SoundI::release                          :     boulderBreak3 (0x7ff3635d7918)
+[LOG] SoundI::release                          :  (0x7ff362eb86f8)
+[LOG] SoundI::release                          :     boulderBreak4 (0x7ff362ec2d88)
+[LOG] SoundI::release                          :  (0x7ff363554d08)
+[LOG] SoundI::release                          :     boulderBreak5 (0x7ff36357daf8)
