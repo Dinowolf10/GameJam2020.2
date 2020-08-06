@@ -9,7 +9,10 @@ public class PowerEnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(DoorToOpen == null)
+        {
+            Debug.Log("Power End in " + transform.parent.transform.parent + " wont open anything");
+        }
     }
 
     // Update is called once per frame

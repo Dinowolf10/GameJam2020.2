@@ -15,7 +15,7 @@ public class RoomChange : MonoBehaviour
     {
         if(Cam1 == null || Cam2 == null)
         {
-            Debug.Log("door at " + transform.position + " is improperly set up");
+            Debug.Log("door " + transform.name + " in " + transform.parent + " is improperly set up");
         }
     }
     private void OnEnable()
