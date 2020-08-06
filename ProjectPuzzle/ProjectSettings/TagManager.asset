@@ -8,6 +8,7 @@ TagManager:
   - Bounce
   - Destructible
   - Enemy
+  - PatternObject
   layers:
   - Default
   - TransparentFX

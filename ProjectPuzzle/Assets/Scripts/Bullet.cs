@@ -61,6 +61,12 @@ public class Bullet : MonoBehaviour
 
             Destroy(this.gameObject);
         }
+        else if (other.tag == "PatternObject" && firedBy == "Player")
+        {
+            other.GetComponent<PatternObject>().NotifyHit();
+
+            Destroy(this.gameObject);
+        }
         else
         {
             Destroy(this.gameObject);
