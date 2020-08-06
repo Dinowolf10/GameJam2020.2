@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5131902749251778135}
   - component: {fileID: 5131902749251778134}
   - component: {fileID: 5131902749251778133}
+  - component: {fileID: -7274047515930201889}
+  - component: {fileID: -9163886118379372913}
   m_Layer: 0
   m_Name: Destructible
   m_TagString: Destructible
@@ -95,3 +97,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-7274047515930201889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5131902749251778132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23226252372124291a8fd4eea6a7b2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-9163886118379372913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5131902749251778132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23226252372124291a8fd4eea6a7b2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
