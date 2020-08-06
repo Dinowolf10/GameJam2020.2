@@ -126,4 +126,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
-  lifeSpan: 2
+  lifeSpan: 0.3
+  firedBy: 

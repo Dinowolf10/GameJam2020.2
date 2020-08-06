@@ -16,6 +16,11 @@ public class EnemyMovement : MonoBehaviour
         spawnPoint = transform.position;
     }
 
+    private void OnDisable()
+    {
+        transform.position = spawnPoint;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
         {
             DetectPlayer();
 
-            CheckForReturn();
+            //CheckForReturn();
 
             //CheckForRotation();
         }
@@ -92,7 +97,7 @@ public class EnemyMovement : MonoBehaviour
                     {
                         transform.Find("EnemyVision").GetComponent<EnemyVision>().seesPlayer = false;
 
-                        this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
+                        //this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
                     }
                 }
             }
@@ -102,13 +107,13 @@ public class EnemyMovement : MonoBehaviour
     /// <summary>
     /// Checks if enemy should move back to spawn point
     /// </summary>
-    public void CheckForReturn()
+    /*public void CheckForReturn()
     {
         if (this.transform.position != spawnPoint && transform.Find("EnemyVision").GetComponent<EnemyVision>().playerInCollider == false)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
         }
-    }
+    }*/
 
     /// <summary>
     /// Checks if enemy is at spawn point and if their rotation needs to be reset
@@ -125,7 +130,7 @@ public class EnemyMovement : MonoBehaviour
     {
         while (this.transform.position != spawnPoint)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .001f);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .0001f);
 
             //Debug.Log("Moving");
 
