@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     private bool fired = false;
 
     [SerializeField]
-    private float lifeSpan = 2f;
+    private float lifeSpan = 1f;
 
     public string firedBy;
 
