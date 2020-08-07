@@ -157,6 +157,8 @@ public class EnemyMovement : MonoBehaviour
             yield return null;
         }
 
+        yield return new WaitForSeconds(1f);
+
         this.transform.rotation = startingRotation;
 
         health = 2;
