@@ -11,14 +11,26 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private Vector3 spawnPoint;
 
+    [SerializeField]
+    private Quaternion startingRotation;
+
+    [SerializeField]
+    private bool resurrectStarted;
+
     void OnEnable()
     {
         spawnPoint = transform.position;
+
+        startingRotation = this.transform.rotation;
+
+        Debug.Log(startingRotation);
     }
 
     private void OnDisable()
     {
         transform.position = spawnPoint;
+
+        transform.rotation = startingRotation;
     }
 
     // Update is called once per frame
@@ -35,7 +47,15 @@ public class EnemyMovement : MonoBehaviour
 
         if (health <= 0)
         {
-            StartCoroutine("Resurrect");
+            if (!resurrectStarted)
+            {
+                // Sound file
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Enemies/enemyDies");
+
+                StartCoroutine("Resurrect");
+
+                resurrectStarted = true;
+            }
         }
     }
 
@@ -130,16 +150,20 @@ public class EnemyMovement : MonoBehaviour
     {
         while (this.transform.position != spawnPoint)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .0001f);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .001f);
 
             //Debug.Log("Moving");
 
-            yield return new WaitForSeconds(.5f);
+            yield return null;
         }
 
-        this.transform.rotation = new Quaternion(this.transform.rotation.x, 180f, this.transform.rotation.z, this.transform.rotation.w);
+        yield return new WaitForSeconds(1f);
+
+        this.transform.rotation = startingRotation;
 
         health = 2;
+
+        resurrectStarted = false;
 
         yield break;
     }
