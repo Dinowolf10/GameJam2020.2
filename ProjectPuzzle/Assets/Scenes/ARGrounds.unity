@@ -3299,6 +3299,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1815275546218595758, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242965861177851272, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4447200724640649977, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_Name
       value: AreaEmpty (1)
@@ -3338,7 +3346,7 @@ PrefabInstance:
     - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: Cam2
       value: 
-      objectReference: {fileID: 681781023}
+      objectReference: {fileID: 1358523997}
     - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: UIFade
       value: 
@@ -7689,6 +7697,10 @@ PrefabInstance:
     - target: {fileID: 6336628971637641817, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686866567987480608, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.79
       objectReference: {fileID: 0}
     - target: {fileID: 8195138432797932560, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: Cam2
@@ -22255,7 +22267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4447200724640649977, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: Cam2
