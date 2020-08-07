@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     public int health = 3;
 
+    public int maxHealth = 3;
+
     public float speed;
 
     [SerializeField]
@@ -43,10 +45,7 @@ public class PlayerController : MonoBehaviour
 
         if (health <= 0 && transform.position != spawnPoint)
         {
-            // Sound file
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerDies");
-
-            transform.position = spawnPoint;
+            StartCoroutine("Respawn");
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -106,5 +105,17 @@ public class PlayerController : MonoBehaviour
             // Player looks at the point, keep y position the same so the player doesnt look at the ground
             transform.LookAt(new Vector3(lookPosition.x, this.transform.position.y, lookPosition.z));
         }
+    }
+
+    private IEnumerator Respawn()
+    {
+        // Sound file
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerDies");
+
+        transform.position = spawnPoint;
+
+        health = maxHealth;
+
+        yield return new WaitForSeconds(3f);
     }
 }
