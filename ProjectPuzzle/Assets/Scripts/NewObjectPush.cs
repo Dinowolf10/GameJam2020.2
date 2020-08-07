@@ -23,9 +23,10 @@ public class NewObjectPush : MonoBehaviour
         if(activelyMoving == true)
         {
             transform.position = Vector3.SmoothDamp(transform.position, posToMoveTo, ref speed, time);
-            if(transform.position == posToMoveTo)
+            if( Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(posToMoveTo.x, posToMoveTo.z) ) < .2f)
             {
                 activelyMoving = false;
+                transform.position = posToMoveTo;
             }
         }
     }
@@ -67,24 +68,32 @@ public class NewObjectPush : MonoBehaviour
 
             }
 
+            Vector3 futureMoveTo;
+
             //get whether to move towards or away from
             if (other.transform.tag == "Player")
             {
-                posToMoveTo = transform.position - (heading * transform.localScale.x);
+                futureMoveTo = transform.position - (heading * transform.localScale.x);
             }
             else
             {
-                posToMoveTo = transform.position + (heading * transform.localScale.x);
+                futureMoveTo = transform.position + (heading * transform.localScale.x);
             }
 
 
             //check if pos is free
             float sphereRad = transform.localScale.x / 2 - .001f;
             
-            if(!Physics.CheckSphere(posToMoveTo, sphereRad))
+            if(!Physics.CheckSphere(futureMoveTo, sphereRad))
             {
-                activelyMoving = true;
-                transform.position = Vector3.SmoothDamp(transform.position, posToMoveTo, ref speed, time);
+                if(activelyMoving == false)
+                {
+                    //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/grunt");
+
+                    activelyMoving = true;
+                    posToMoveTo = futureMoveTo;
+                    transform.position = Vector3.SmoothDamp(transform.position, posToMoveTo, ref speed, time);
+                }
             }          
 
         }
