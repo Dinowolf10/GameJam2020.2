@@ -3362,7 +3362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4447200724640649977, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4936553796705221757, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: Cam2

@@ -47,11 +47,17 @@ public class Bullet : MonoBehaviour
         {
             other.GetComponent<EnemyMovement>().health--;
 
+            // Sound file
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Enemies/enemyHurt");
+
             Destroy(this.gameObject);
         }
         else if (other.gameObject.name == "Player" && firedBy == "Enemy")
         {
             other.GetComponent<PlayerController>().health--;
+
+            // Sound file
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerhurt");
 
             Destroy(this.gameObject);
         }

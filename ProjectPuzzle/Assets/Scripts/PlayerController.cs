@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
         {
             cam = Camera.main;
         }
+
+        spawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -39,8 +41,11 @@ public class PlayerController : MonoBehaviour
             cam = FindObjectOfType<Camera>();
         }
 
-        if (health <= 0)
+        if (health <= 0 && transform.position != spawnPoint)
         {
+            // Sound file
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerDies");
+
             transform.position = spawnPoint;
         }
 
