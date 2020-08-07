@@ -62,6 +62,7 @@ MonoBehaviour:
   east: 0
   west: 0
   opposite: {fileID: 4799098850899289400}
+  canPush: 0
 --- !u!1 &4799098849745074164
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,6 +78,7 @@ GameObject:
   - component: {fileID: 4799098849745074165}
   - component: {fileID: 4799098849745074174}
   - component: {fileID: 4799098849745074175}
+  - component: {fileID: 1822052874340857686}
   m_Layer: 0
   m_Name: PowerPush
   m_TagString: Untagged
@@ -218,6 +220,18 @@ MonoBehaviour:
   SequenceNumber: 2
   charged: 0
   IsEnd: 0
+--- !u!114 &1822052874340857686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799098849745074164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e693f425a5e14b4fb080eec5abf25e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4799098850876508058
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +294,7 @@ MonoBehaviour:
   east: 1
   west: 0
   opposite: {fileID: 4799098851141229381}
+  canPush: 0
 --- !u!1 &4799098850899289400
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +357,7 @@ MonoBehaviour:
   east: 0
   west: 0
   opposite: {fileID: 4799098849496827463}
+  canPush: 0
 --- !u!1 &4799098851141229381
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,3 +420,4 @@ MonoBehaviour:
   east: 0
   west: 1
   opposite: {fileID: 4799098850876508058}
+  canPush: 0

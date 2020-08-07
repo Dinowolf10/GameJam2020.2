@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class NewObjectPush : MonoBehaviour
 {
-
+    private FMOD.Studio.EventInstance pushSound;
+    FMOD.Studio.PLAYBACK_STATE PbState;
     private Vector3 speed;
     private float time = .2f;
 
@@ -17,18 +18,23 @@ public class NewObjectPush : MonoBehaviour
         
     }
 
+    void Awake()
+    {
+        pushSound = FMODUnity.RuntimeManager.CreateInstance("event:/Puzzle mechanics/pushingOrPulling");
+    }
     // Update is called once per frame
     void Update()
     {
         if(activelyMoving == true)
         {
+            pushSound.start();
             transform.position = Vector3.SmoothDamp(transform.position, posToMoveTo, ref speed, time);
             if( Vector2.Distance(new Vector2(transform.position.x, transform.position.z), new Vector2(posToMoveTo.x, posToMoveTo.z) ) < .2f)
             {
                 activelyMoving = false;
                 transform.position = posToMoveTo;
             }
-        }
+        } 
     }
 
     private void OnTriggerEnter(Collider other)
@@ -88,7 +94,7 @@ public class NewObjectPush : MonoBehaviour
             {
                 if(activelyMoving == false)
                 {
-                    //FMODUnity.RuntimeManager.PlayOneShot("event:/Player/grunt");
+                   // FMODUnity.RuntimeManager.PlayOneShot("event:/Player/grunt");
 
                     activelyMoving = true;
                     posToMoveTo = futureMoveTo;
