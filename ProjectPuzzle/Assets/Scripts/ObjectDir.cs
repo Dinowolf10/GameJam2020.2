@@ -10,6 +10,8 @@ public class ObjectDir : MonoBehaviour
     public bool west;
 
     private ObjectPush objp;
+    public GameObject opposite;
+    public bool canPush;
 
     private void Start()
     {
@@ -19,47 +21,62 @@ public class ObjectDir : MonoBehaviour
             Debug.LogError("No object push reference");
         }
     }
+    private void OnEnable()
+    {
+        canPush = true;
+    }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && objp.newpos == Vector3.zero)
+        if(other.tag == "Player" && objp.newpos == Vector3.zero && canPush == true)
         {
             if(north == true)
             {
-                objp.newpos = objp.transform.position - (objp.transform.forward * objp.transform.localScale.x);
+               DirSet(-objp.transform.forward);
             }
             if (south == true)
             {
-                objp.newpos = objp.transform.position + (objp.transform.forward * objp.transform.localScale.x);
+                DirSet(objp.transform.forward);
             }
             if (east == true)
             {
-                objp.newpos = objp.transform.position - (objp.transform.right * objp.transform.localScale.x);
+                DirSet(-objp.transform.right);
             }
             if (west == true)
             {
-                objp.newpos = objp.transform.position + (objp.transform.right * objp.transform.localScale.x);
+                DirSet(objp.transform.right);
             }
         }
-        if(other.tag == "Bullet" && objp.newpos == Vector3.zero)
+        else if(other.tag == "Bullet" && objp.newpos == Vector3.zero)
         {
             if(north == true)
             {
-                objp.newpos = objp.transform.position + (objp.transform.forward * objp.transform.localScale.x);
+                DirSet(objp.transform.forward);
             }
             if (south == true)
             {
-                objp.newpos = objp.transform.position - (objp.transform.forward * objp.transform.localScale.x);
+                DirSet(-objp.transform.forward);
             }
             if (east == true)
             {
-                objp.newpos = objp.transform.position + (objp.transform.right * objp.transform.localScale.x);
+                DirSet(objp.transform.right);
             }
             if (west == true)
             {
-                objp.newpos = objp.transform.position - (objp.transform.right * objp.transform.localScale.x);
+                DirSet(-objp.transform.right);
             }
+        }
+        else
+        {
+            opposite.GetComponent<ObjectDir>().canPush = false;
         }
     }
+
+    void DirSet(Vector3 dir)
+    {
+        objp.newpos = objp.transform.position + (dir * objp.transform.localScale.x);
+    }
+
+    
 }

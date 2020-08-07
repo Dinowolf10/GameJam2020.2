@@ -16,7 +16,7 @@ MonoBehaviour:
   guid: 7f6384f32aeeae428a7b94104b53ef57
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
   guid: df5cd8f89980bc41a00eb752c3200656
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
   guid: 21f2a93821a97344a5f3eca8694ead31
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -90,6 +90,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2201
+--- !u!114 &-7169736237303294479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon7
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon7
+  guid: 9dbf6ea1c490314cb9a08ed6a6b8b7e7
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3608
 --- !u!114 &-7137335285163894334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +147,7 @@ MonoBehaviour:
   guid: 4ca02f58b2a2864381007085f4a1a393
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -132,6 +155,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 716
+--- !u!114 &-6862262272167062738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simonFail
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simonFail
+  guid: 6b5b8415550c404abfe5202e8beec533
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1759
 --- !u!114 &-6727682366351719885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +194,7 @@ MonoBehaviour:
   guid: d974d474494e544ea651a9c509768611
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -172,7 +218,7 @@ MonoBehaviour:
   guid: 7753c4256bcb924f9099d2fbaef9ec7b
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -214,7 +260,7 @@ MonoBehaviour:
   guid: 3c61f3b22a2503449dc50f6da3903bd4
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -292,7 +338,7 @@ MonoBehaviour:
   guid: 57c766ed40e4fe419255a5cd4d336428
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -316,7 +362,7 @@ MonoBehaviour:
   guid: 66796d63eea77042bba922664b5f4f91
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -358,7 +404,7 @@ MonoBehaviour:
   guid: 7b8ad7cca8897149b71cc6d6af1984af
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -436,7 +482,7 @@ MonoBehaviour:
   guid: 44a56bdaee4b574e9dd44cfdc808a67e
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -514,7 +560,7 @@ MonoBehaviour:
   guid: 0e5756db2568024e9376314fa7a5e03b
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -522,6 +568,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 63216
+--- !u!114 &-2620132837246425583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon4
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon4
+  guid: 166133c72af75743b58c14601c0c8e66
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3937
 --- !u!114 &-2409736179183461255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,7 +625,7 @@ MonoBehaviour:
   guid: cdf56510c628554e9bcf6b902fb0d773
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -580,7 +649,7 @@ MonoBehaviour:
   guid: 65ba3d2d1a8b9147b35f287e876d8a33
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -588,6 +657,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 178000
+--- !u!114 &-1774513638297552149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: projectpuzzle_fmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637323300258938037
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1701465299077501161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +745,7 @@ MonoBehaviour:
   guid: 6ff9fbbb848952479bdfb1687ae73d38
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -680,7 +767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 4450115826319770729}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   EditorEvents:
   - {fileID: 7035587074780026241}
   - {fileID: -4195555104254462919}
@@ -705,12 +792,21 @@ MonoBehaviour:
   - {fileID: 5863986651938453504}
   - {fileID: -4140150934134385304}
   - {fileID: -7071549200247715657}
+  - {fileID: 1498101757323423291}
+  - {fileID: -2620132837246425583}
+  - {fileID: 4866485518226977719}
+  - {fileID: -6862262272167062738}
+  - {fileID: 2389606972953988010}
+  - {fileID: 1716220601480048195}
+  - {fileID: -7169736237303294479}
+  - {fileID: 2855891337441240497}
+  - {fileID: 1869241779653798097}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   StringsBanks:
   - {fileID: 4450115826319770729}
-  stringsBankWriteTime: 637323421790000000
+  stringsBankWriteTime: 637323300258948201
   cacheVersion: 3
 --- !u!114 &122050558937252214
 MonoBehaviour:
@@ -764,7 +860,7 @@ MonoBehaviour:
   guid: 6ecb465d3bce554a83c51f85bbd897e3
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -772,6 +868,98 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 23545
+--- !u!114 &1498101757323423291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon8
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon8
+  guid: 13b65757445f2543a169cf4a2231a7cd
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2094
+--- !u!114 &1716220601480048195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon1
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon1
+  guid: 863336f11c79dd449d6030c16ebbaa99
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3500
+--- !u!114 &1869241779653798097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon2
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon2
+  guid: f204133a9a20384fb1fc38b636dd11de
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3687
+--- !u!114 &2389606972953988010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon6
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon6
+  guid: 6c488b4d99fe814eabf9c162d0eabbed
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3175
 --- !u!114 &2481859940187781725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,7 +976,7 @@ MonoBehaviour:
   guid: 9d3986791d4b284f91698bf1013b1c5c
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -812,7 +1000,7 @@ MonoBehaviour:
   guid: a0830fd93d325d47ac695001b729b6db
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -854,7 +1042,7 @@ MonoBehaviour:
   guid: ac885fc24c6f904ab3d8a83cd690aae9
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -880,6 +1068,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2855891337441240497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon5
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon5
+  guid: a8b01856444076468e5df75d629d36c6
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3121
 --- !u!114 &3305461572825147713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,11 +1213,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: projectpuzzle_fmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637323421790000000
+  lastModified: 637323300258948201
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1806
+    Value: 2120
   Exists: 1
 --- !u!114 &4802755962341390960
 MonoBehaviour:
@@ -1024,7 +1235,7 @@ MonoBehaviour:
   guid: f54f033886b7de4a8a7dfe5136fc2ce1
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1032,6 +1243,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1376
+--- !u!114 &4866485518226977719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Simon/simon3
+  m_EditorClassIdentifier: 
+  Path: event:/Simon/simon3
+  guid: 20ac594266745348bcf488dedee6b573
+  Banks:
+  - {fileID: -1774513638297552149}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3375
 --- !u!114 &5639542918460703236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1084,7 +1318,7 @@ MonoBehaviour:
   guid: 18e3c81451bb604fac7b729d5aa42e0d
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1126,7 +1360,7 @@ MonoBehaviour:
   guid: 2881075cdd754a4da76cdfe2cc9a112d
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1204,7 +1438,7 @@ MonoBehaviour:
   guid: f2961673ced91e45a8a42d360da93b7a
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5048818524133166900}
+  - {fileID: -1774513638297552149}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

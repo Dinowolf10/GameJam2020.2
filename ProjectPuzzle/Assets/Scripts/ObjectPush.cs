@@ -14,6 +14,8 @@ public class ObjectPush : MonoBehaviour
     CharacterController ccr;
 
     int soundPlayed = 0;
+    public GameObject[] SidesOfBlock;
+    public bool doonce;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,16 @@ public class ObjectPush : MonoBehaviour
                 soundPlayed++;
             }
 
+            if (doonce == false)
+            {
+                for (int i = 0; i < SidesOfBlock.Length; i++)
+                {
+                    SidesOfBlock[i].SetActive(false);
+                }
+                Invoke("ResetTheSides", .2f);
+                doonce = true;
+            }
+
             transform.position = Vector3.SmoothDamp(transform.position, newpos, ref speed, time);
             ccr.enabled = false;
         }
@@ -45,7 +57,8 @@ public class ObjectPush : MonoBehaviour
 
             newpos = Vector3.zero;
             ccr.enabled = true;
-            Debug.Log("done");
+
+            
         }
         if (newpos == Vector3.zero)
         {
@@ -62,11 +75,21 @@ public class ObjectPush : MonoBehaviour
 
     }
 
-   
-            //newpos = transform.position - (transform.forward * transform.localScale.x);
-            //newpos = transform.position + (transform.forward * transform.localScale.x);
-            //newpos = transform.position - (transform.right * transform.localScale.z);
-            //newpos = transform.position + (transform.right * transform.localScale.z);
+    private void ResetTheSides()
+    {
+        if (doonce == true)
+        {
+            for (int i = 0; i < SidesOfBlock.Length; i++)
+            {
+                SidesOfBlock[i].SetActive(true);
+            }
+            doonce = false;
+        }
+    }
+    //newpos = transform.position - (transform.forward * transform.localScale.x);
+    //newpos = transform.position + (transform.forward * transform.localScale.x);
+    //newpos = transform.position - (transform.right * transform.localScale.z);
+    //newpos = transform.position + (transform.right * transform.localScale.z);
 
     private void OnDrawGizmos()
     {
