@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{0ed790a2-eeba-4b4f-b984-09b7fbc14eb5}">
+		<property name="assetPath">
+			<value>Simon/simon8(new).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.0949886621315192</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b2cdb2-d943-4c53-8c7f-06ab373f4cee}</destination>
+		</relationship>
+	</object>
+</objects>
