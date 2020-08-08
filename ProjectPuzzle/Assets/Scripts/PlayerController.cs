@@ -35,8 +35,6 @@ public class PlayerController : MonoBehaviour
         }
 
         spawnPoint = transform.position;
-
-        transform.position = spawnPoint;
     }
 
     // Update is called once per frame
@@ -152,6 +150,8 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Respawn()
     {
+        this.GetComponent<CapsuleCollider>().enabled = false;
+
         // Sound file
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerDies");
 
@@ -166,6 +166,8 @@ public class PlayerController : MonoBehaviour
         health = maxHealth;
 
         hasDied = false;
+
+        this.GetComponent<CapsuleCollider>().enabled = true;
 
         playerController.enabled = true;
     }

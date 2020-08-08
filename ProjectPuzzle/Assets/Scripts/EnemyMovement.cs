@@ -17,6 +17,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private bool resurrectStarted;
 
+    private bool isAttacking = false;
+
     bool tauntPlayer = false;
 
     public Animator anim;
@@ -53,7 +55,9 @@ public class EnemyMovement : MonoBehaviour
 
         if (GameObject.Find("Player").GetComponent<PlayerController>().hasDied == true && tauntPlayer == false)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
+            this.transform.position = spawnPoint;
+
+            this.transform.rotation = startingRotation;
 
             StartCoroutine("TauntPlayer");
         }
@@ -81,7 +85,7 @@ public class EnemyMovement : MonoBehaviour
         Transform playerPos = GameObject.Find("Player").GetComponent<Transform>();
 
         // If player is still alive, the enemy looks at the players position
-        if (playerPos != null)
+        if (playerPos != null && isAttacking == false)
         {
             this.transform.LookAt(playerPos, Vector3.up);
         }
@@ -209,7 +213,11 @@ public class EnemyMovement : MonoBehaviour
     {
         anim.SetBool("isAttacking", true);
 
+        isAttacking = true;
+
         yield return new WaitForSeconds(.5f);
+
+        isAttacking = false;
 
         anim.SetBool("isAttacking", false);
     }

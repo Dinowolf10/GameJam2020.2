@@ -43,7 +43,7 @@ public class EnemyShooting : MonoBehaviour
 
             Shoot();
 
-            shootTimer = 2f;
+            shootTimer = 3f;
         }
     }
 
