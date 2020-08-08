@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public int health = 2;
 
-    public float speed;
+    public float speed = 1.5f;
 
     [SerializeField]
     private Vector3 spawnPoint;
@@ -17,13 +17,19 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private bool resurrectStarted;
 
+    bool tauntPlayer = false;
+
+    public Animator anim;
+
+    public Transform[] skeletonParts;
+
     void OnEnable()
     {
         spawnPoint = transform.position;
 
         startingRotation = this.transform.rotation;
 
-        Debug.Log(startingRotation);
+        anim = transform.Find("Skeleton").GetComponent<Animator>();
     }
 
     private void OnDisable()
@@ -36,13 +42,20 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health > 0)
+        if (health > 0 && GameObject.Find("Player").GetComponent<PlayerController>().hasDied == false)
         {
             DetectPlayer();
 
             //CheckForReturn();
 
             //CheckForRotation();
+        }
+
+        if (GameObject.Find("Player").GetComponent<PlayerController>().hasDied == true && tauntPlayer == false)
+        {
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, speed / 2 * Time.deltaTime);
+
+            StartCoroutine("TauntPlayer");
         }
 
         if (health <= 0)
@@ -70,7 +83,7 @@ public class EnemyMovement : MonoBehaviour
         // If player is still alive, the enemy looks at the players position
         if (playerPos != null)
         {
-            this.transform.LookAt(playerPos);
+            this.transform.LookAt(playerPos, Vector3.up);
         }
     }
 
@@ -81,7 +94,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (playerPos != null)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos.position, speed * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, playerPos.position + Vector3.up, speed * Time.deltaTime);
         }
     }
 
@@ -148,23 +161,78 @@ public class EnemyMovement : MonoBehaviour
 
     public IEnumerator Resurrect()
     {
+        anim.SetBool("isDead", true);
+
+        yield return new WaitForSeconds(2f);
+
         while (this.transform.position != spawnPoint)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .001f);
+
+            for (int i = 0; i < skeletonParts.Length; i++)
+            {
+                skeletonParts[i].GetComponent<Renderer>().material.color = Color.black;
+            }
 
             //Debug.Log("Moving");
 
             yield return null;
         }
 
-        yield return new WaitForSeconds(1f);
+        anim.SetBool("isResurrecting", true);
+
+        anim.SetBool("isDead", false);
+
+        yield return new WaitForSeconds(2f);
 
         this.transform.rotation = startingRotation;
 
         health = 2;
 
+        anim.SetBool("isResurrecting", false);
+
+        for (int i = 0; i < skeletonParts.Length; i++)
+        {
+            skeletonParts[i].GetComponent<Renderer>().material.color = Color.white;
+        }
+
         resurrectStarted = false;
 
         yield break;
+    }
+
+    public IEnumerator EnemyAttacking()
+    {
+        anim.SetBool("isAttacking", true);
+
+        yield return new WaitForSeconds(.5f);
+
+        anim.SetBool("isAttacking", false);
+    }
+
+    public IEnumerator EnemyAttacked()
+    {
+        anim.SetBool("isAttacked", true);
+
+        speed = 0f;
+
+        yield return new WaitForSeconds(.5f);
+
+        anim.SetBool("isAttacked", false);
+
+        speed = 1.5f;
+
+        yield break;
+    }
+
+    public IEnumerator TauntPlayer()
+    {
+        anim.SetBool("playerDied", true);
+
+        yield return new WaitForSeconds(2f);
+
+        anim.SetBool("playerDied", false);
+
+        tauntPlayer = false;
     }
 }

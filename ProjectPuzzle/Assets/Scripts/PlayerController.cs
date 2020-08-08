@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
 
+    public Animator anim;
+
+    public bool hasDied = false;
+
     [SerializeField]
     private Vector3 spawnPoint;
 
@@ -22,6 +26,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerController = this.GetComponent<CharacterController>();
+
+        anim = GetComponent<Animator>();
 
         if (cam == null)
         {
@@ -34,9 +40,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (playerController.enabled == true)
+        {
+            Move();
 
-        Look();
+            Look();
+        }
 
         if (cam.gameObject.activeInHierarchy == false)
         {
@@ -45,7 +54,14 @@ public class PlayerController : MonoBehaviour
 
         if (health <= 0 && transform.position != spawnPoint)
         {
-            StartCoroutine("Respawn");
+            if (hasDied == false)
+            {
+                hasDied = true;
+
+                playerController.enabled = false;
+
+                StartCoroutine("Respawn");
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -71,10 +87,35 @@ public class PlayerController : MonoBehaviour
         // Gets user inpt from the horizontal and vertical axis
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
+        if (movement != Vector3.zero && movement.x < 0)
+        {
+            anim.SetBool("isWalkingLeft", true);
+            anim.SetBool("isWalkingRight", false);
+            anim.SetBool("isWalking", false);
+        }
+        else if (movement != Vector3.zero && movement.x > 0)
+        {
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", true);
+            anim.SetBool("isWalking", false);
+        }
+        else if (movement != Vector3.zero)
+        {
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", false);
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalkingLeft", false);
+            anim.SetBool("isWalkingRight", false);
+            anim.SetBool("isWalking", false);
+        }
+
         playerController.Move(movement * speed * Time.deltaTime);
 
         // Keeps player on the ground
-        transform.position = new Vector3(transform.position.x, 1.08f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, -0.06f, transform.position.z);
 
         /*if (movement != Vector3.zero)
         {
@@ -112,10 +153,18 @@ public class PlayerController : MonoBehaviour
         // Sound file
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerDies");
 
+        anim.SetBool("isDead", true);
+
+        yield return new WaitForSeconds(5f);
+
+        anim.SetBool("isDead", false);
+
         transform.position = spawnPoint;
 
         health = maxHealth;
 
-        yield return new WaitForSeconds(3f);
+        hasDied = false;
+
+        playerController.enabled = true;
     }
 }

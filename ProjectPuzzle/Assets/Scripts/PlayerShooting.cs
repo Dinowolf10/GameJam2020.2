@@ -13,10 +13,12 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     private float coolDownTimer;
 
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,8 @@ public class PlayerShooting : MonoBehaviour
         }
         else if (coolDownTimer > 0)
         {
+            anim.SetBool("isShooting", false);
+
             coolDownTimer -= Time.deltaTime;
         }
     }
@@ -39,6 +43,8 @@ public class PlayerShooting : MonoBehaviour
     /// </summary>
     private void Shoot()
     {
+        anim.SetBool("isShooting", true);
+
         // Instantiates a bullet at the fire position and sets the firedBy variable to player
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         bullet.GetComponent<Bullet>().firedBy = "Player";

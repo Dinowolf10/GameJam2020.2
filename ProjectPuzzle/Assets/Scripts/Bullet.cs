@@ -47,6 +47,11 @@ public class Bullet : MonoBehaviour
         {
             other.GetComponent<EnemyMovement>().health--;
 
+            if (other.GetComponent<EnemyMovement>().health >= 1)
+            {
+                other.GetComponent<EnemyMovement>().StartCoroutine("EnemyAttacked");
+            }
+
             // Sound file
             FMODUnity.RuntimeManager.PlayOneShot("event:/Enemies/enemyHurt");
 
