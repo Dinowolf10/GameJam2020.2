@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
 
                 playerController.enabled = false;
 
+                GetComponent<PlayerShooting>().enabled = false;
+
                 StartCoroutine("Respawn");
             }
         }
@@ -174,6 +176,8 @@ public class PlayerController : MonoBehaviour
         hasDied = false;
 
         this.GetComponent<CapsuleCollider>().enabled = true;
+
+        GetComponent<PlayerShooting>().enabled = true;
 
         playerController.enabled = true;
     }

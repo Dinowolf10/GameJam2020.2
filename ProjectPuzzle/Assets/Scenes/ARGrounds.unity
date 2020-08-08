@@ -38326,7 +38326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Heart1: {fileID: 1567844357}
   Heart2: {fileID: 669162307}
-  Heart3: {fileID: 0}
+  Heart3: {fileID: 393272141}
 --- !u!1001 &1400496840
 PrefabInstance:
   m_ObjectHideFlags: 0

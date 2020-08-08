@@ -36,7 +36,7 @@ public class UIHearts : MonoBehaviour
             Heart2.SetActive(false);
             Heart3.SetActive(false);
         }
-        if (PH.health == 0)
+        if (PH.health <= 0)
         {
             Heart1.SetActive(false);
             Heart2.SetActive(false);

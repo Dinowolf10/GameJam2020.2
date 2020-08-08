@@ -56,10 +56,10 @@ public class EnemyShooting : MonoBehaviour
 
         // Instantiates a bullet and sets firedBy variable to enemy
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bullet.GetComponent<Bullet>().firedBy = "Enemy";
         var rotation = bullet.GetComponent<Transform>().rotation.eulerAngles;
         rotation.z = -90f;
         bullet.GetComponent<Transform>().rotation = Quaternion.Euler(rotation);
+        bullet.GetComponent<Bullet>().firedBy = "Enemy";
 
 
         // Sound file
