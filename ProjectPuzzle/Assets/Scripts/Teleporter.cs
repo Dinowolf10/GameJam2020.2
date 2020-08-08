@@ -31,9 +31,9 @@ public class Teleporter : MonoBehaviour
 
         GameObject.Find("Player").GetComponent<Transform>().position = new Vector3(otherTeleporter.x -1.5f, 1.08f, otherTeleporter.z);
 
-        yield return new WaitForSeconds(.50f);
-
         FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/teleportPad");
+
+        yield return new WaitForSeconds(.50f);
 
         cc.enabled = true;
 
