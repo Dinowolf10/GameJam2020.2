@@ -31,6 +31,7 @@ public class SceneController : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
 
         Time.timeScale = 1f;
+        GameController.instance.pauseMenuOpen = false;
     }
 
     public void AddScene(string sceneName)
