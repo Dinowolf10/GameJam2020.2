@@ -2281,6 +2281,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 905601207, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 98243776376802298, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2328,22 +2332,6 @@ PrefabInstance:
     - target: {fileID: 3964946584722209257, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8262927986944397909, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
-      propertyPath: spawnPoint.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8262927986944397909, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
-      propertyPath: spawnPoint.x
-      value: -1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8262927986944397909, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
-      propertyPath: spawnPoint.z
-      value: -5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8356104788821793935, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
-      propertyPath: m_Radius
-      value: 0.58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe296514ebfd8c4c93180ed9e889144, type: 3}
@@ -15755,7 +15743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6686866567987480608, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.92
+      value: 7.59
       objectReference: {fileID: 0}
     - target: {fileID: 6686866567987480608, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_RootOrder
