@@ -9,6 +9,7 @@ TagManager:
   - Destructible
   - Enemy
   - PatternObject
+  - EventsTrigger
   layers:
   - Default
   - TransparentFX

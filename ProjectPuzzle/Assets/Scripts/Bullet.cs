@@ -73,6 +73,10 @@ public class Bullet : MonoBehaviour
 
             Destroy(this.gameObject);
         }
+        else if(other.tag == "EventsTrigger")
+        {
+
+        }
         else
         {
             Destroy(this.gameObject);
