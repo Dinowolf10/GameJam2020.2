@@ -190,7 +190,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.798081}
+  m_Size: {x: 1, y: 10, z: 2.798081}
   m_Center: {x: 0, y: 0, z: -0.11121154}
 --- !u!54 &7987109960944311022
 Rigidbody:
@@ -301,7 +301,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.4118085}
+  m_Size: {x: 1, y: 10, z: 2.4118085}
   m_Center: {x: 0, y: 0, z: 0.052211046}
 --- !u!1 &2741884630115322905
 GameObject:
@@ -454,7 +454,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3171451254948288695
 GameObject:
@@ -1191,8 +1191,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 10, z: 4.35868}
+  m_Center: {x: 5.525201e-15, y: 0, z: -1.6793401}
 --- !u!1 &4242965861177851272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,8 +1348,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 10, z: 5.3865166}
+  m_Center: {x: -1.7678035e-15, y: 0, z: 2.1932583}
 --- !u!1 &4447200724640649977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1483,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.7683673}
+  m_Size: {x: 1, y: 10, z: 2.7683673}
   m_Center: {x: 0, y: 0, z: -0.12606835}
 --- !u!54 &1214771698145392093
 Rigidbody:
@@ -1691,7 +1691,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6301046941018513330
 GameObject:
@@ -2097,7 +2097,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.7968936}
+  m_Size: {x: 1, y: 10, z: 2.7968936}
   m_Center: {x: 0, y: 0, z: 0.14151692}
 --- !u!1 &9162905933839368891
 GameObject:
