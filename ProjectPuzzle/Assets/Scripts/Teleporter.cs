@@ -33,6 +33,8 @@ public class Teleporter : MonoBehaviour
 
         yield return new WaitForSeconds(.50f);
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/teleportPad");
+
         cc.enabled = true;
 
         yield break;
