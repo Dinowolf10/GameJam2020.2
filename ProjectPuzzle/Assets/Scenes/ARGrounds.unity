@@ -15082,7 +15082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4447200724640649977, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4459399577526004035, guid: 69193a62bac7f8b4c9715080df445cbb, type: 3}
       propertyPath: m_RootOrder
@@ -42187,7 +42187,7 @@ Transform:
   m_Children:
   - {fileID: 1194567280}
   m_Father: {fileID: 1992478113}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2044312509
 BoxCollider:
