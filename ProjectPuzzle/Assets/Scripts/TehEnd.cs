@@ -31,6 +31,7 @@ public class TehEnd : MonoBehaviour
         if (other.tag == "Player")
         {
             Invoke("func1",.5f);
+            Invoke("func1point5", 10f);
             Invoke("func2", 14f);
             Invoke("func3", 14.5f);
         }
@@ -38,6 +39,11 @@ public class TehEnd : MonoBehaviour
     void func1()
     {
         anim.Play("Event");
+
+    }
+    void func1point5()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/rewindTeleport");
     }
     void func2()
     {
@@ -45,7 +51,7 @@ public class TehEnd : MonoBehaviour
         FirstLevel.SetActive(true);
         FinalStopper.SetActive(true);
         ExitDoor.SetActive(false);
-        
+
         Player.GetComponent<PlayerController>().enabled = false;
         Player.position = MiddleofFirstLevel;
     }
