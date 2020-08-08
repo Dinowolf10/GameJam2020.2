@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
         }
 
         spawnPoint = transform.position;
+
+        transform.position = spawnPoint;
     }
 
     // Update is called once per frame

@@ -193,7 +193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  maxHealth: 3
   speed: 5
+  anim: {fileID: 0}
+  hasDied: 0
   spawnPoint: {x: 0, y: 0, z: 0}
   cam: {fileID: 0}
 --- !u!114 &2456792505298026303
@@ -211,3 +214,4 @@ MonoBehaviour:
   firePoint: {fileID: 2456792504182730871}
   bulletPrefab: {fileID: 8100639304402723921, guid: 653b06c26f1886c41902a5de6f1c534c, type: 3}
   coolDownTimer: 0
+  anim: {fileID: 0}
