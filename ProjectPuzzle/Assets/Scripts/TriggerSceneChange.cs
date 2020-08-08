@@ -8,6 +8,9 @@ public class TriggerSceneChange : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneController.instance.ChangeScene(sceneName);
+        if(other.tag == "Player")
+        {
+            SceneController.instance.ChangeScene(sceneName);
+        }
     }
 }
