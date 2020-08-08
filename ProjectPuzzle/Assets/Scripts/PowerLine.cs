@@ -30,20 +30,20 @@ public class PowerLine : MonoBehaviour
             transform.GetChild(ChildActive).transform.GetChild(0).GetComponent<Renderer>().material.color = ColorOn;
             transform.GetChild(ChildActive).transform.GetChild(1).GetComponent<Renderer>().material.color = ColorOn;
             transform.GetChild(ChildActive).transform.GetChild(2).GetComponent<Renderer>().material.color = ColorOn;
-            if(transform.GetChild(ChildActive).transform.GetChild(3) != null)
-            {
-                transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOn;
-            }
+            //if(transform.GetChild(ChildActive).transform.GetChild(3) != null)
+            //{
+            //    transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOn;
+            //}
         }
         else
         {
             transform.GetChild(ChildActive).transform.GetChild(0).GetComponent<Renderer>().material.color = ColorOff;
             transform.GetChild(ChildActive).transform.GetChild(1).GetComponent<Renderer>().material.color = ColorOff;
             transform.GetChild(ChildActive).transform.GetChild(2).GetComponent<Renderer>().material.color = ColorOff;
-            if (transform.GetChild(ChildActive).transform.GetChild(3) != null)
-            {
-                transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOff;
-            }
+            //if (transform.GetChild(ChildActive).transform.GetChild(3) != null)
+            //{
+            //    transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOff;
+            //}
         }
     }
 
