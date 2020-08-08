@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera cam;
 
+    public float iframetill;
+    bool iframe;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +69,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        iframetill -= Time.deltaTime;
+        iframetill = Mathf.Clamp(iframetill, 0, Mathf.Infinity);
+        if (iframetill <= 0)
+        {
+            iframe = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if(GameController.instance.pauseMenuOpen == false)
@@ -74,6 +84,15 @@ public class PlayerController : MonoBehaviour
                 GameController.instance.pauseMenuOpen = true;
                 SceneController.instance.AddScene(GameController.instance.pauseMenuName);
             }
+        }
+    }
+
+    public void TakeDamage(int damagetaking)
+    {
+        if (iframe == false)
+        {
+            health -= damagetaking;
+            iframetill = .3f;
         }
     }
 

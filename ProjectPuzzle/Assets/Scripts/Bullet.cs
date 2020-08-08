@@ -59,7 +59,7 @@ public class Bullet : MonoBehaviour
         }
         else if (other.gameObject.name == "Player" && firedBy == "Enemy")
         {
-            other.GetComponent<PlayerController>().health--;
+            other.GetComponent<PlayerController>().TakeDamage(1);
 
             // Sound file
             FMODUnity.RuntimeManager.PlayOneShot("event:/Player/playerhurt");
