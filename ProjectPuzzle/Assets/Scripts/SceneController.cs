@@ -29,6 +29,8 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/select");
+
+        Time.timeScale = 1f;
     }
 
     public void AddScene(string sceneName)
