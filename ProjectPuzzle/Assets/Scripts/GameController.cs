@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
 
     public void PauseMenuClosed()
     {
+        Time.timeScale = 1;
         pauseMenuOpen = false;
     }
 

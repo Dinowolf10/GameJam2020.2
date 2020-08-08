@@ -16,7 +16,7 @@ MonoBehaviour:
   guid: 7f6384f32aeeae428a7b94104b53ef57
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
   guid: df5cd8f89980bc41a00eb752c3200656
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
   guid: 21f2a93821a97344a5f3eca8694ead31
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -105,7 +105,7 @@ MonoBehaviour:
   Path: event:/Simon/simon7
   guid: 9dbf6ea1c490314cb9a08ed6a6b8b7e7
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
   guid: 4ca02f58b2a2864381007085f4a1a393
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: event:/Simon/simonFail
   guid: 6b5b8415550c404abfe5202e8beec533
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/pushingOrPulling2
   guid: ec7134cc647e1a46a78716d6818b47e7
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -217,7 +217,7 @@ MonoBehaviour:
   guid: d974d474494e544ea651a9c509768611
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -241,7 +241,7 @@ MonoBehaviour:
   guid: 7753c4256bcb924f9099d2fbaef9ec7b
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   guid: 3c61f3b22a2503449dc50f6da3903bd4
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
   lastModified: 637324413487760667
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-5048818524133166900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   guid: 57c766ed40e4fe419255a5cd4d336428
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -403,7 +403,7 @@ MonoBehaviour:
   guid: 66796d63eea77042bba922664b5f4f91
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -481,7 +481,7 @@ MonoBehaviour:
   guid: 7b8ad7cca8897149b71cc6d6af1984af
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -559,7 +559,7 @@ MonoBehaviour:
   guid: 44a56bdaee4b574e9dd44cfdc808a67e
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -655,7 +655,7 @@ MonoBehaviour:
   guid: 0e5756db2568024e9376314fa7a5e03b
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
   Path: event:/Simon/simon4
   guid: 166133c72af75743b58c14601c0c8e66
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -720,7 +720,7 @@ MonoBehaviour:
   guid: cdf56510c628554e9bcf6b902fb0d773
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -744,7 +744,7 @@ MonoBehaviour:
   guid: 65ba3d2d1a8b9147b35f287e876d8a33
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -840,7 +840,7 @@ MonoBehaviour:
   guid: 6ff9fbbb848952479bdfb1687ae73d38
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 4450115826319770729}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   EditorEvents:
   - {fileID: 7035587074780026241}
   - {fileID: -4195555104254462919}
@@ -901,10 +901,10 @@ MonoBehaviour:
   - {fileID: 4582634012230281367}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   StringsBanks:
   - {fileID: 4450115826319770729}
-  stringsBankWriteTime: 637324413487770352
+  stringsBankWriteTime: 637324905177143086
   cacheVersion: 3
 --- !u!114 &122050558937252214
 MonoBehaviour:
@@ -958,7 +958,7 @@ MonoBehaviour:
   guid: 6ecb465d3bce554a83c51f85bbd897e3
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   Path: event:/Simon/simon8
   guid: 13b65757445f2543a169cf4a2231a7cd
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   Path: event:/Simon/simon1
   guid: 863336f11c79dd449d6030c16ebbaa99
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   Path: event:/Simon/simon2
   guid: f204133a9a20384fb1fc38b636dd11de
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   Path: event:/Simon/simon6
   guid: 6c488b4d99fe814eabf9c162d0eabbed
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1128,7 +1128,7 @@ MonoBehaviour:
   guid: 9d3986791d4b284f91698bf1013b1c5c
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   guid: a0830fd93d325d47ac695001b729b6db
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   guid: ac885fc24c6f904ab3d8a83cd690aae9
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1235,7 +1235,7 @@ MonoBehaviour:
   Path: event:/Simon/simon5
   guid: a8b01856444076468e5df75d629d36c6
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: projectpuzzle_fmod/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637324413487770352
+  lastModified: 637324905177143086
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1404,7 +1404,7 @@ MonoBehaviour:
   Path: event:/Player/rewindTeleport
   guid: c1ac0597b4fcd14eaa883d649cb57c12
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   guid: f54f033886b7de4a8a7dfe5136fc2ce1
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   Path: event:/Simon/simon3
   guid: 20ac594266745348bcf488dedee6b573
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1565,7 +1565,7 @@ MonoBehaviour:
   guid: 18e3c81451bb604fac7b729d5aa42e0d
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1573,6 +1573,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6000
+--- !u!114 &6501622252135781798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: projectpuzzle_fmod/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637324905177122992
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6586187574143808849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,7 +1643,7 @@ MonoBehaviour:
   guid: 2881075cdd754a4da76cdfe2cc9a112d
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1720,7 +1738,7 @@ MonoBehaviour:
   Path: event:/Puzzle mechanics/teleportPad
   guid: 9b30d824d5311d4fb64059a7a5a7c3d5
   Banks:
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1762,7 +1780,7 @@ MonoBehaviour:
   guid: f2961673ced91e45a8a42d360da93b7a
   Banks:
   - {fileID: 7759948404260572165}
-  - {fileID: -5289280754224042382}
+  - {fileID: 6501622252135781798}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             if(GameController.instance.pauseMenuOpen == false)
             {
+                Time.timeScale = 0;
                 GameController.instance.pauseMenuOpen = true;
                 SceneController.instance.AddScene(GameController.instance.pauseMenuName);
             }

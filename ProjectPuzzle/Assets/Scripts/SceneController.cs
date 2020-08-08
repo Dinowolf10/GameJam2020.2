@@ -12,9 +12,17 @@ public class SceneController : MonoBehaviour
     {
         if(instance != null && instance != this)
         {
-            Destroy(gameObject);
+            return;
         }
-        instance = this;
+        else
+        {
+            instance = this;
+        }
+    }
+
+    public void HoverSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/hover");
     }
 
     public void ChangeScene(string sceneName)

@@ -26,9 +26,13 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && coolDownTimer <= 0)
         {
-            Shoot();
+            if(GameController.instance == null || (GameController.instance != null && GameController.instance.pauseMenuOpen == false))
+            {
+                Shoot();
 
-            coolDownTimer = .35f;
+                coolDownTimer = .35f;
+            }
+            
         }
         else if (coolDownTimer > 0)
         {
