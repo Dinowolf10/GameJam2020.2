@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         // Gets user inpt from the horizontal and vertical axis
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
-        if (movement != Vector3.zero && movement.x < 0)
+        /*if (movement != Vector3.zero && movement.x < 0)
         {
             anim.SetBool("isWalkingLeft", true);
             anim.SetBool("isWalkingRight", false);
@@ -99,11 +99,11 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isWalkingLeft", false);
             anim.SetBool("isWalkingRight", true);
             anim.SetBool("isWalking", false);
-        }
-        else if (movement != Vector3.zero)
+        }*/
+        if (movement != Vector3.zero)
         {
-            anim.SetBool("isWalkingLeft", false);
-            anim.SetBool("isWalkingRight", false);
+            //anim.SetBool("isWalkingLeft", false);
+            //anim.SetBool("isWalkingRight", false);
             anim.SetBool("isWalking", true);
         }
         else
@@ -118,10 +118,10 @@ public class PlayerController : MonoBehaviour
         // Keeps player on the ground
         transform.position = new Vector3(transform.position.x, -0.06f, transform.position.z);
 
-        /*if (movement != Vector3.zero)
+        if (movement != Vector3.zero)
         {
             transform.forward = movement;
-        }*/
+        }
     }
     
     /// <summary>
@@ -144,8 +144,13 @@ public class PlayerController : MonoBehaviour
             // Stores the point the player should look at
             Vector3 lookPosition = camRay.GetPoint(rayLength);
 
+            if (transform.GetComponent<PlayerShooting>().shooting == true)
+            {
+                transform.LookAt(new Vector3(lookPosition.x, this.transform.position.y, lookPosition.z));
+            }
+
             // Player looks at the point, keep y position the same so the player doesnt look at the ground
-            transform.LookAt(new Vector3(lookPosition.x, this.transform.position.y, lookPosition.z));
+            transform.Find("FirePoint").GetComponent<Transform>().LookAt(new Vector3(lookPosition.x, transform.Find("FirePoint").GetComponent<Transform>().position.y, lookPosition.z));
         }
     }
 
