@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 8262927986944397908}
   - component: {fileID: 8262927986944397909}
   - component: {fileID: 8356104788821793935}
+  - component: {fileID: -3312987371526381073}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -247,6 +248,7 @@ MonoBehaviour:
   firePoint: {fileID: 905601207}
   bulletPrefab: {fileID: 8100639304402723921, guid: 653b06c26f1886c41902a5de6f1c534c, type: 3}
   coolDownTimer: 1
+  shooting: 0
   anim: {fileID: 0}
 --- !u!114 &8262927986944397909
 MonoBehaviour:
@@ -281,6 +283,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &-3312987371526381073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98243776376802298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e523034aa6d584ea7983dae6530b583e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footAudio: event:/Player/footsteps
+  walkingspeed: 0.37
 --- !u!1 &176206559159809025
 GameObject:
   m_ObjectHideFlags: 0
