@@ -22,7 +22,7 @@ public class PowerEnd : MonoBehaviour
     }
     public void ChargeToLine()
     {
-        if (DoorToOpen == true)
+        if (DoorToOpen.activeInHierarchy == true)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Puzzle mechanics/Door unlock");
         }

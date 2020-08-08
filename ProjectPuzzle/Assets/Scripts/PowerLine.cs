@@ -11,6 +11,8 @@ public class PowerLine : MonoBehaviour
     public int ChildActive;
     public Color ColorOn;
     public Color ColorOff;
+    [Space(20)]
+    public GameObject PERef;
 
     // Start is called before the first frame update
     void Start()
@@ -83,12 +85,14 @@ public class PowerLine : MonoBehaviour
             }
         }
 
-        else if (Physics.Raycast(transform.position, transform.forward, out hit, 1f) && IsEnd)
+        else if (IsEnd)
         {
-            if (hit.transform.gameObject.GetComponent<PowerEnd>() != null)
+            if (PERef.transform.gameObject.GetComponent<PowerEnd>() != null)
             {
-                hit.transform.gameObject.GetComponent<PowerEnd>().ChargeToLine();
+                PERef.transform.gameObject.GetComponent<PowerEnd>().ChargeToLine();
             }
+            else;
+            Debug.Log("you missed one");
         }
     }
 
