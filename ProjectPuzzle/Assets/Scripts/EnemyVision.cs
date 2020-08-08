@@ -19,8 +19,14 @@ public class EnemyVision : MonoBehaviour
             // Enemy moves towards the player
             this.transform.parent.GetComponent<EnemyMovement>().MoveTowardsPlayer(other.transform);
 
+            transform.parent.GetComponent<EnemyMovement>().anim.SetBool("isWalking", true);
+
             // Enemy shoots at the player
             this.transform.parent.GetComponent<EnemyShooting>().ShotCooldown();
+        }
+        else
+        {
+            transform.parent.GetComponent<EnemyMovement>().anim.SetBool("isWalking", false);
         }
     }
 
