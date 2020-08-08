@@ -13,6 +13,8 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     private float coolDownTimer;
 
+    public bool shooting = false;
+
     public Animator anim;
 
     // Start is called before the first frame update
@@ -47,7 +49,11 @@ public class PlayerShooting : MonoBehaviour
     /// </summary>
     private void Shoot()
     {
+        shooting = true;
+
         anim.SetBool("isShooting", true);
+
+        transform.GetComponent<PlayerController>().Look();
 
         // Instantiates a bullet at the fire position and sets the firedBy variable to player
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
@@ -55,5 +61,7 @@ public class PlayerShooting : MonoBehaviour
 
         // Sound file for shooting
         FMODUnity.RuntimeManager.PlayOneShot("event:/Weapons/playerHandgun");
+
+        shooting = false;
     }
 }

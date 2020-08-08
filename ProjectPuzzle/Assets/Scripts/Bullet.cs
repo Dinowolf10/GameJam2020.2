@@ -66,6 +66,10 @@ public class Bullet : MonoBehaviour
 
             Destroy(this.gameObject);
         }
+        else if (other.gameObject.name == "Player")
+        {
+
+        }
         else if (other.tag == "Destructible")
         {
             Destroy(other.gameObject);

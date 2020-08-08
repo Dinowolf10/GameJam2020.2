@@ -173,7 +173,7 @@ public class EnemyMovement : MonoBehaviour
 
         while (this.transform.position != spawnPoint)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .001f);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, spawnPoint, .004f);
 
             for (int i = 0; i < skeletonParts.Length; i++)
             {
