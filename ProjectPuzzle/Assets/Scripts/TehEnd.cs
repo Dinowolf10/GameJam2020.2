@@ -38,6 +38,8 @@ public class TehEnd : MonoBehaviour
     void func1()
     {
         anim.Play("Event");
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/rewindTeleport");
     }
     void func2()
     {
@@ -45,7 +47,7 @@ public class TehEnd : MonoBehaviour
         FirstLevel.SetActive(true);
         FinalStopper.SetActive(true);
         ExitDoor.SetActive(false);
-        
+
         Player.GetComponent<PlayerController>().enabled = false;
         Player.position = MiddleofFirstLevel;
     }
