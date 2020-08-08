@@ -246,12 +246,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Awesomeness: Rynder
+  m_text: 'Music & Sound: Freddi Wesemeyer
 
-    Music & Sound: Freddi
-
-    Programming: Rynder,
-    Zaven, PhionexRising'
+    Programming: Rynder, Zaven Kazandjian,
+    Aidan Rodgers'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7c6baf17af81843ba3bdde3650637f, type: 2}
   m_sharedMaterial: {fileID: 7832188451380387270, guid: 7b7c6baf17af81843ba3bdde3650637f, type: 2}
