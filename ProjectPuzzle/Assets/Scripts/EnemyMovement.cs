@@ -163,6 +163,8 @@ public class EnemyMovement : MonoBehaviour
     {
         anim.SetBool("isDead", true);
 
+        this.transform.GetComponent<CapsuleCollider>().enabled = false;
+
         yield return new WaitForSeconds(2f);
 
         while (this.transform.position != spawnPoint)
@@ -197,6 +199,8 @@ public class EnemyMovement : MonoBehaviour
         }
 
         resurrectStarted = false;
+
+        this.transform.GetComponent<CapsuleCollider>().enabled = true;
 
         yield break;
     }

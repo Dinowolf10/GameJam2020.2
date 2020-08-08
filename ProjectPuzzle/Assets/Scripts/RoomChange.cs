@@ -39,6 +39,8 @@ public class RoomChange : MonoBehaviour
             Invoke("TransitionEnable", FadeDuration);
             Invoke("switchflick", FadeDuration * .6f);
             FMODUnity.RuntimeManager.PlayOneShot("event:/UI/transition");
+
+            other.GetComponent<PlayerController>().spawnPoint = other.GetComponent<Transform>().position;
         }
     }
     private void OnTriggerExit(Collider other)

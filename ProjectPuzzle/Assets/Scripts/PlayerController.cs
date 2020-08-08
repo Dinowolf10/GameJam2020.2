@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public bool hasDied = false;
 
     [SerializeField]
-    private Vector3 spawnPoint;
+    public Vector3 spawnPoint;
 
     [SerializeField]
     private Camera cam;
