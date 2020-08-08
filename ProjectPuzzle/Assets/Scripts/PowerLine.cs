@@ -7,6 +7,10 @@ public class PowerLine : MonoBehaviour
     public int SequenceNumber;
     public bool charged;
     public bool IsEnd;
+    [Space(20)]
+    public int ChildActive;
+    public Color ColorOn;
+    public Color ColorOff;
 
     // Start is called before the first frame update
     void Start()
@@ -23,11 +27,23 @@ public class PowerLine : MonoBehaviour
     {
         if (charged)
         {
-            gameObject.GetComponent<Renderer>().material.color = Color.green;
+            transform.GetChild(ChildActive).transform.GetChild(0).GetComponent<Renderer>().material.color = ColorOn;
+            transform.GetChild(ChildActive).transform.GetChild(1).GetComponent<Renderer>().material.color = ColorOn;
+            transform.GetChild(ChildActive).transform.GetChild(2).GetComponent<Renderer>().material.color = ColorOn;
+            if(transform.GetChild(ChildActive).transform.GetChild(3) != null)
+            {
+                transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOn;
+            }
         }
         else
         {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            transform.GetChild(ChildActive).transform.GetChild(0).GetComponent<Renderer>().material.color = ColorOff;
+            transform.GetChild(ChildActive).transform.GetChild(1).GetComponent<Renderer>().material.color = ColorOff;
+            transform.GetChild(ChildActive).transform.GetChild(2).GetComponent<Renderer>().material.color = ColorOff;
+            if (transform.GetChild(ChildActive).transform.GetChild(3) != null)
+            {
+                transform.GetChild(ChildActive).transform.GetChild(3).GetComponent<Renderer>().material.color = ColorOff;
+            }
         }
     }
 
